@@ -1,12 +1,13 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
-    author: `Kyle Mathews`,
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    title: `Bản đồ lây nhiễm virus Corona`,
+    author: `Tạ Sỹ Tân`,
+    description: `Bản đồ lây nhiễm virus Corona cập nhật hàng ngày`,
+    siteUrl: `https://corona.netlify.com/`,
     social: {
-      twitter: `kylemathews`,
+      github: `sytanta`,
     },
+    updatedDate: `31/01/2020`
   },
   plugins: [
     {
@@ -51,6 +52,13 @@ module.exports = {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         //trackingId: `ADD YOUR TRACKING ID HERE`,
+      },
+    },
+    `gatsby-transformer-json`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `./src/data/`,
       },
     },
     `gatsby-plugin-feed`,

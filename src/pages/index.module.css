@@ -1,0 +1,53 @@
+.content {
+  font-family: arial, Helvetica, sans-serif;
+  padding: 2rem 1rem;
+}
+
+.info {
+  padding: 6px 8px;
+  font: 0.7rem sans-serif, Arial, Helvetica;
+  background: white;
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+.info div {
+  color: #777;
+  font-size: 0.9rem;
+  text-align: center;
+}
+.info p {
+  margin: 0.2rem 0 0;
+}
+.info span {
+  font-weight: bold;
+  text-decoration: underline;
+}
+.infectionData {
+  text-align: center;
+}
+.infectionData span {
+  color: white;
+  background-color: #800026;
+  border-radius: 50%;
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0 auto;
+  padding: 10px 15px;
+  text-decoration: none;
+}
+
+.legend {
+  text-align: left;
+  line-height: 18px;
+  color: #555;
+}
+.legend i {
+  width: 18px;
+  height: 18px;
+  float: left;
+  margin-right: 8px;
+  opacity: 0.7;
+}
