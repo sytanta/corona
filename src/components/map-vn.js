@@ -40,20 +40,6 @@ const initMap = createButton => {
       circles = result[2],
       vngeo = result[3]
 
-    function getColor(d) {
-      return d > 100
-        ? "#800026"
-        : d > 50
-        ? "#E31A1C"
-        : d > 20
-        ? "#FC4E2A"
-        : d > 10
-        ? "#FD8D3C"
-        : d > 5
-        ? "#FEB24C"
-        : "#FED976"
-    }
-
     function styleProvince(feature) {
       const infected = infectionData[feature.properties["GID_1"]]
         ? +infectionData[feature.properties["GID_1"]].infected
