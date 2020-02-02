@@ -32,12 +32,11 @@ const initMap = createButton => {
   Promise.all([
     d3.json("/data/vn-provinces.geojson"),
     d3.json("/data/corona-infection-vn.json"),
-    d3.json("/data/vn-provinces-latlong.json"),
     d3.json("/data/vn.geojson"),
   ]).then(result => {
     const collection = result[0],
       infectionData = result[1].data,
-      circles = result[2],
+      circles = result[1].data,
       vngeo = result[3]
 
     function styleProvince(feature) {
@@ -129,13 +128,13 @@ const initMap = createButton => {
      * Circle for each virus source
      */
     for (let province in circles) {
-      const popupContent = `${infectionData[province].province} - Số ca nhiễm: ${infectionData[province].infected}`
+      const popupContent = `${circles[province].province} - Số ca nhiễm: ${circles[province].infected}`
 
-      L.circleMarker(circles[province], {
+      L.circleMarker(circles[province].latlong, {
         color: "red",
         fillColor: "#f03",
         fillOpacity: 0.5,
-        radius: infectionData[province].infected * 10,
+        radius: circles[province].infected * 10,
         weight: 1,
       })
         .addTo(map)

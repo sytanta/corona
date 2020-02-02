@@ -3,6 +3,7 @@
   "data": {
     "VNM.25_1": {
       "province": "Thành phố Hồ Chí Minh",
+      "latlong": [10.781775, 106.693340],
       "infected": "3",
       "cured": "1",
       "death": 0,
@@ -10,6 +11,7 @@
     },
     "VNM.32_1": {
       "province": "Tỉnh Khánh Hòa",
+      "latlong": [12.310702, 109.004585],
       "infected": "1",
       "cured": "0",
       "death": 0,
@@ -17,6 +19,7 @@
     },
     "VNM.57_1": {
       "province": "Tỉnh Thanh Hóa",
+      "latlong": [20.048258, 105.504447],
       "infected": "1",
       "cured": "0",
       "death": 0,
@@ -24,6 +27,7 @@
     },
     "VNM.27_1": {
       "province": "Thành phố Hà Nội",
+      "latlong": [21.021009, 105.727314],
       "infected": "2",
       "cured": "0",
       "death": 0,
