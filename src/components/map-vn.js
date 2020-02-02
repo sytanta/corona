@@ -37,7 +37,7 @@ const initMap = createButton => {
     const collection = result[0],
       infectionData = result[1].data,
       circles = result[1].data,
-      vngeo = result[3]
+      vngeo = result[2]
 
     function styleProvince(feature) {
       const infected = infectionData[feature.properties["GID_1"]]
