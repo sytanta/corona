@@ -60,7 +60,7 @@ const initMap = createButton => {
         : 0
 
       return {
-        fillColor: infected ? getColor(infected) : "none",
+        fillColor: infected ? "#FEB24C" : "none",
         color: infected ? "white" : "transparent",
         cursor: "move",
         strokeWidth: "0",
