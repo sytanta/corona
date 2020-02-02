@@ -30,7 +30,7 @@ const initMap = createButton => {
   }).setView([21.021009, 105.727314], 6)
 
   Promise.all([
-    d3.json("/data/vn-provinces.geojson"),
+    d3.json("/data/vn-province.geojson"),
     d3.json("/data/corona-infection-vn.json"),
     d3.json("/data/vn.geojson"),
   ]).then(result => {
