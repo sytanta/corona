@@ -1,0 +1,84 @@
+.info {
+  font: 0.7rem sans-serif, Arial, Helvetica;
+}
+.info > div {
+  padding: 6px 8px;
+  background: white;
+  /* background: rgba(255, 255, 255, 0.8); */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+.info button {
+  background: dimgray;
+  color: white;
+  box-shadow: none;
+  border: none;
+  border-radius: 3px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+.buttonContainer {
+  margin-top: 0.2rem;
+  padding: 0;
+  text-align: right !important;
+}
+.info .buttonContainer {
+  background: transparent;
+  box-shadow: none;
+}
+
+.info div {
+  color: #000;
+  font-size: 0.9rem;
+  text-align: center;
+}
+.info p {
+  margin: 0.2rem 0 0;
+}
+.info span {
+  font-weight: bold;
+  text-decoration: underline;
+}
+.infectionData {
+  text-align: center;
+}
+.infectionData span {
+  color: white;
+  background-color: #800026;
+  border-radius: 50%;
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0 auto;
+  padding: 10px 15px;
+  text-decoration: none;
+}
+.vn.info {
+  max-width: 15rem;
+}
+.vn.info div {
+  text-align: left;
+}
+.vn.info > div div:first-child {
+  color: red;
+}
+.vn.info > div div:nth-child(2) {
+  color: green;
+}
+
+.tooltip {
+  max-width: 20rem;
+}
+
+.legend {
+  text-align: left;
+  line-height: 18px;
+  color: #555;
+}
+.legend i {
+  width: 18px;
+  height: 18px;
+  float: left;
+  margin-right: 8px;
+  opacity: 0.7;
+}
