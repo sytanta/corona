@@ -65,13 +65,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `Bản đồ lây nhiễm virus Corona (nCov)`,
+        short_name: `CoronaMap`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `content/assets/gatsby-icon.png`,
+        icon: `static/images/favicon.jpg`,
       },
     },
     `gatsby-plugin-react-helmet`,
