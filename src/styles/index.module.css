@@ -31,7 +31,7 @@ a {
   background-color: #191A1A;
   color: #fff;
   flex-grow: 0;
-  height: 500px;
+  max-height: 500px;
   overflow-x: hidden;
   padding: 0.5rem;
 }
@@ -48,11 +48,12 @@ a {
   background-color: darkolivegreen;
 }
 .infoTable table th td:nth-child(2), .infoTable table td:nth-child(2) {
-  background-color: firebrick;
+  background-color: darkolivegreen;
+  color: gold;
 }
 .infoTable table th td:nth-child(3), .infoTable table td:nth-child(3) {
-  background-color: yellowgreen;
-  color: darkgreen;
+  background-color: darkolivegreen;
+  color: coral;
 }
 
 .infoTable table tbody tr:last-child {
