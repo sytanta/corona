@@ -1,0 +1,218 @@
+[
+  {
+    "WB_A3": "CHN",
+    "name": "China",
+    "infected": "14380",
+    "death": "304",
+    "cured": "0",
+    "isolated": "0"
+  },
+  {
+    "WB_A3": "HKG",
+    "name": "Hong Kong SAR",
+    "infected": "14",
+    "death": "0",
+    "cured": "0",
+    "isolated": "0"
+  },
+  {
+    "WB_A3": "MAC",
+    "name": "Macau SAR",
+    "infected": "7",
+    "death": "0",
+    "cured": "0",
+    "isolated": "0"
+  },
+  {
+    "WB_A3": "TWN",
+    "name": "Taipei",
+    "infected": "10",
+    "death": "0",
+    "cured": "0",
+    "isolated": "0"
+  },
+  {
+    "WB_A3": "JPN",
+    "name": "Japan",
+    "infected": "20",
+    "death": "0",
+    "cured": "0",
+    "isolated": "0"
+  },
+  {
+    "WB_A3": "KOR",
+    "name": "Republic of Korea",
+    "infected": "15",
+    "death": "0",
+    "cured": "0",
+    "isolated": "0"
+  },
+  {
+    "WB_A3": "VNM",
+    "name": "Viet Nam",
+    "infected": "7",
+    "death": "0",
+    "cured": "0",
+    "isolated": "0"
+  },
+  {
+    "WB_A3": "SGP",
+    "name": "Singapore",
+    "infected": "18",
+    "death": "0",
+    "cured": "0",
+    "isolated": "0"
+  },
+  {
+    "WB_A3": "AUS",
+    "name": "Australia",
+    "infected": "12",
+    "death": "0",
+    "cured": "0",
+    "isolated": "0"
+  },
+  {
+    "WB_A3": "MYS",
+    "name": "Malaysia",
+    "infected": "8",
+    "death": "0",
+    "cured": "0",
+    "isolated": "0"
+  },
+  {
+    "WB_A3": "KHM",
+    "name": "Cambodia",
+    "infected": "1",
+    "death": "0",
+    "cured": "0",
+    "isolated": "0"
+  },
+  {
+    "WB_A3": "PHL",
+    "name": "Philippines",
+    "infected": "2",
+    "death": "1",
+    "cured": "0",
+    "isolated": "0"
+  },
+  {
+    "WB_A3": "THA",
+    "name": "Thailand",
+    "infected": "19",
+    "death": "0",
+    "cured": "0",
+    "isolated": "0"
+  },
+  {
+    "WB_A3": "NPL",
+    "name": "Nepal",
+    "infected": "1",
+    "death": "0",
+    "cured": "0",
+    "isolated": "0"
+  },
+  {
+    "WB_A3": "LKA",
+    "name": "Sri Lanka",
+    "infected": "1",
+    "death": "0",
+    "cured": "0",
+    "isolated": "0"
+  },
+  {
+    "WB_A3": "IND",
+    "name": "India",
+    "infected": "2",
+    "death": "0",
+    "cured": "0",
+    "isolated": "0"
+  },
+  {
+    "WB_A3": "USA",
+    "name": "United States of America",
+    "infected": "8",
+    "death": "0",
+    "cured": "0",
+    "isolated": "0"
+  },
+  {
+    "WB_A3": "CAN",
+    "name": "Canada",
+    "infected": "4",
+    "death": "0",
+    "cured": "0",
+    "isolated": "0"
+  },
+  {
+    "WB_A3": "FRA",
+    "name": "France",
+    "infected": "6",
+    "death": "0",
+    "cured": "0",
+    "isolated": "0"
+  },
+  {
+    "WB_A3": "FIN",
+    "name": "Finland",
+    "infected": "1",
+    "death": "0",
+    "cured": "0",
+    "isolated": "0"
+  },
+  {
+    "WB_A3": "DEU",
+    "name": "Germany",
+    "infected": "8",
+    "death": "0",
+    "cured": "0",
+    "isolated": "0"
+  },
+  {
+    "WB_A3": "ITA",
+    "name": "Italy",
+    "infected": "2",
+    "death": "0",
+    "cured": "0",
+    "isolated": "0"
+  },
+  {
+    "WB_A3": "RUS",
+    "name": "Russian Federation",
+    "infected": "2",
+    "death": "0",
+    "cured": "0",
+    "isolated": "0"
+  },
+  {
+    "WB_A3": "ESP",
+    "name": "Spain",
+    "infected": "1",
+    "death": "0",
+    "cured": "0",
+    "isolated": "0"
+  },
+  {
+    "WB_A3": "SWE",
+    "name": "Sweden",
+    "infected": "1",
+    "death": "0",
+    "cured": "0",
+    "isolated": "0"
+  },
+  {
+    "WB_A3": "GBR",
+    "name": "United Kingdom",
+    "infected": "2",
+    "death": "0",
+    "cured": "0",
+    "isolated": "0"
+  },
+  {
+    "WB_A3": "ARE",
+    "name": "United Arab Emirates",
+    "infected": "5",
+    "death": "0",
+    "cured": "0",
+    "isolated": "0"
+  }
+]

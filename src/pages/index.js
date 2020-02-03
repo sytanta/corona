@@ -5,8 +5,11 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import MapVN from "../components/map-vn"
 import MapWorld from "../components/map-world"
+import Content from "../components/content"
+import DataTableVN from "../components/data-table-vn"
+import DataTableWorld from "../components/data-table-world"
 
-import classes from "./index.module.css"
+import classes from "../styles/index.module.css"
 
 class Index extends Component {
   state = {
@@ -29,22 +32,32 @@ class Index extends Component {
 
     const mapComponent =
       this.state.mapType === "vn" ? (
-        <MapVN setMap={this.setMapType} />
+        <MapVN
+          setMap={this.setMapType}
+          infectionData={data.allInfectionVnJson.edges}
+        />
       ) : (
-        <MapWorld setMap={this.setMapType} />
+        <MapWorld
+          setMap={this.setMapType}
+          infectionData={data.allInfectionWorldJson.edges}
+        />
+      )
+
+    const dataTableComponent =
+      this.state.mapType === "vn" ? (
+        <DataTableVN data={data.allInfectionVnJson.edges} />
+      ) : (
+        <DataTableWorld data={data.allInfectionWorldJson.edges} />
       )
 
     return (
       <Layout location={location}>
         <SEO title={siteTitle} />
-        <div style={{ height: "500px" }}>{mapComponent}</div>
-        <div className={classes.content}>
-          Bản đồ lây nhiễm virus Corona, cập nhật hàng ngày từ trang web chính
-          thức của Tổ chức Y tế Thế giới (WHO).
-          <div>
-            - Số liệu mới nhất ngày {data.site.siteMetadata.updatedDate}
-          </div>
+        <div className={classes.container}>
+          <div className={classes.mapContainer}>{mapComponent}</div>
+          <div className={classes.infoTable}>{dataTableComponent}</div>
         </div>
+        <Content updatedDate={data.site.siteMetadata.updatedDate} />
       </Layout>
     )
   }
@@ -58,6 +71,33 @@ export const pageQuery = graphql`
       siteMetadata {
         title
         updatedDate
+      }
+    }
+
+    allInfectionVnJson {
+      edges {
+        node {
+          death
+          GID_1
+          cured
+          latlong
+          infected
+          note
+          province
+        }
+      }
+    }
+
+    allInfectionWorldJson {
+      edges {
+        node {
+          WB_A3
+          name
+          infected
+          cured
+          death
+          isolated
+        }
       }
     }
   }

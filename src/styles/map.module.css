@@ -65,15 +65,20 @@
 .vn.info > div div:nth-child(2) {
   color: green;
 }
+.note {
+  margin-top: 0.2rem;
+}
 
 .tooltip {
   max-width: 20rem;
 }
 
 .legend {
-  text-align: left;
   line-height: 18px;
   color: #555;
+}
+.legend div {
+  text-align: left;
 }
 .legend i {
   width: 18px;

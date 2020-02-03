@@ -1,0 +1,82 @@
+.content,
+.hotlines {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.content > div {
+  background: gray;
+  flex: 1;
+}
+
+.content > div,
+.hotlines {
+  margin: 0.1rem;
+  padding: 0.5rem;
+}
+
+.content h4 {
+  text-align: center;
+}
+
+.content ol,
+.content ul {
+  padding-left: 1.2rem;
+}
+.content ol li,
+.content ul li {
+  margin-bottom: 0.5rem;
+}
+.content a {
+  background: darkgreen;
+  box-shadow: none;
+  color: white;
+  display: block;
+  height: 2rem;
+  line-height: 2rem;
+  text-align: center;
+  text-decoration: none;
+}
+.content a:hover {
+  background: darkorange;
+}
+
+.hotlines,
+.contact {
+  background: gray;
+}
+.hotlines div {
+  color: aliceblue;
+  background: darkgreen;
+  flex: 1 0 auto;
+  margin: 0.1rem;
+  padding: 0.3rem 0.5rem;
+}
+.hotlines a {
+  color: khaki;
+}
+
+.contact {
+  margin: 0.1rem;
+  background: none;
+  padding: 0.3rem 0.5rem;
+  text-align: right;
+}
+.contact a {
+  box-shadow: none;
+  text-decoration: none;
+}
+
+/* News */
+@media all and (max-width: 600px) {
+  .content {
+    flex-direction: column;
+  }
+}
+
+/* Hotline blocks */
+@media all and (max-width: 850px) {
+  .hotlines {
+    flex-direction: column;
+  }
+}

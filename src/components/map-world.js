@@ -1,9 +1,9 @@
 import React, { Component } from "react"
 import ReactDOM from "react-dom"
 
-import classes from "./map.module.css"
+import classes from "../styles/map.module.css"
 
-const initMap = createButton => {
+const initMap = (infectionDataArr, createButton) => {
   const d3 = window.d3
   const L = window.L
 
@@ -29,13 +29,14 @@ const initMap = createButton => {
     layers: [grayScale],
   }).setView([0, 0], 2)
 
-  Promise.all([
-    d3.json("/data/world-50m-wba3.geojson"),
-    d3.json("/data/corona-infection-by-country.json"),
-  ]).then(result => {
-    const collection = result[0],
-      infectionData = result[1].data,
-      updatedDate = result[1].date
+  Promise.all([d3.json("/data/world-50m-wba3.geojson")]).then(result => {
+    const collection = result[0]
+
+    const infectionData = infectionDataArr.reduce((acc, item) => {
+      acc[item.node["WB_A3"]] = { ...item.node }
+
+      return acc
+    }, {})
 
     function getColor(d) {
       return d > 100
@@ -138,22 +139,21 @@ const initMap = createButton => {
     }
 
     info.update = function(props) {
-      props = props || {}
       const btnContainerId = "switchMapBtnContainer"
+      const btn = `<div id="${btnContainerId}" class="${classes.buttonContainer}"></div>`
 
-      this._div.innerHTML =
-        `<div class="info-content">` +
-        (infectionData[props["WB_A3"]]
-          ? `<div>Số ca nhiễm${
+      const content =
+        props && infectionData[props["WB_A3"]]
+          ? `<div class="info-content"><div>Số ca nhiễm${
               props.NAME ? " tại <span>" + props.NAME : "</span>"
             }</div>
             <p class="${classes.infectionData}"><span>${
               infectionData[props["WB_A3"]].infected
-            }</span></p>`
-          : ``) +
-        `<p>Cập nhật ngày: ${updatedDate}</p>
-        </div>
-        <div id="${btnContainerId}" class="${classes.buttonContainer}"></div>`
+            }</span></p>
+            </div>`
+          : ``
+
+      this._div.innerHTML = content + btn
 
       // Add switch map button
       setTimeout(() => {
@@ -201,7 +201,7 @@ const initMap = createButton => {
 
 class MapWorld extends Component {
   componentDidMount() {
-    initMap(this.createSwitchMapButton)
+    initMap(this.props.infectionData, this.createSwitchMapButton)
   }
 
   createSwitchMapButton = containerId => {

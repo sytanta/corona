@@ -1,9 +1,9 @@
 import React, { Component } from "react"
 import ReactDOM from "react-dom"
 
-import classes from "./map.module.css"
+import classes from "../styles/map.module.css"
 
-const initMap = createButton => {
+const initMap = (infectionDataArr, createButton) => {
   const d3 = window.d3
   const L = window.L
 
@@ -31,13 +31,17 @@ const initMap = createButton => {
 
   Promise.all([
     d3.json("/data/vn-province.geojson"),
-    d3.json("/data/corona-infection-vn.json"),
     d3.json("/data/vn.geojson"),
   ]).then(result => {
     const collection = result[0],
-      infectionData = result[1].data,
-      circles = result[1].data,
-      vngeo = result[2]
+      circles = infectionDataArr,
+      vngeo = result[1]
+
+    const infectionData = infectionDataArr.reduce((acc, item) => {
+      acc[item.node["GID_1"]] = { ...item.node }
+
+      return acc
+    }, {})
 
     function styleProvince(feature) {
       const infected = infectionData[feature.properties["GID_1"]]
@@ -127,14 +131,14 @@ const initMap = createButton => {
     /**
      * Circle for each virus source
      */
-    for (let province in circles) {
-      const popupContent = `${circles[province].province} - Số ca nhiễm: ${circles[province].infected}`
+    for (let { node: province } of circles) {
+      const popupContent = `${province.province} - Số ca nhiễm: ${province.infected}`
 
-      L.circleMarker(circles[province].latlong, {
+      L.circleMarker(province.latlong, {
         color: "red",
         fillColor: "#f03",
         fillOpacity: 0.5,
-        radius: circles[province].infected * 10,
+        radius: province.infected * 10,
         weight: 1,
       })
         .addTo(map)
@@ -159,9 +163,9 @@ const initMap = createButton => {
       if (props) {
         content = `
           <div class="info-content">
-            <div>- Số ca nhiễm tại ${props.province}: ${props.infected}</div>
-            <div>- Đã chữa khỏi: ${props.cured}</div>
-            <div>${props.note}</div>
+            <div>${props.province}: ${props.infected} ca</div>
+            <div>Đã chữa khỏi: ${props.cured}</div>
+            <div class=${classes.note}>${props.note}</div>
           </div>
           <div id="${btnContainerId}" class="${classes.buttonContainer}"></div>
           `
@@ -183,7 +187,7 @@ const initMap = createButton => {
 
 class MapVN extends Component {
   componentDidMount() {
-    initMap(this.createSwitchMapButton)
+    initMap(this.props.infectionData, this.createSwitchMapButton)
   }
 
   createSwitchMapButton = containerId => {
