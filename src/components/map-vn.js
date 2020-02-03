@@ -7,6 +7,9 @@ const initMap = (infectionDataArr, setLoading, createButton) => {
   const d3 = window.d3
   const L = window.L
 
+  const infectedColor = "#FEB24C"
+  const curedColor = "#556B2F"
+
   const mbAttribute =
       'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>, Ta Sy Tan',
     mbUrl =
@@ -46,12 +49,21 @@ const initMap = (infectionDataArr, setLoading, createButton) => {
     }, {})
 
     function styleProvince(feature) {
-      const infected = infectionData[feature.properties["GID_1"]]
-        ? +infectionData[feature.properties["GID_1"]].infected
-        : 0
+      const { infected, cured, death } = infectionData[
+        feature.properties["GID_1"]
+      ]
+        ? infectionData[feature.properties["GID_1"]]
+        : { infected: 0, cured: 0, death: 0 }
+
+      const fillColor =
+        infected <= cured + death
+          ? curedColor
+          : infected
+          ? infectedColor
+          : "none"
 
       return {
-        fillColor: infected ? "#FEB24C" : "none",
+        fillColor: fillColor,
         color: infected ? "white" : "transparent",
         cursor: "move",
         strokeWidth: "0",
@@ -111,12 +123,20 @@ const initMap = (infectionDataArr, setLoading, createButton) => {
       })
 
       if (infectionData[layer.feature.properties["GID_1"]]) {
-        const data = infectionData[layer.feature.properties["GID_1"]]
+        const { province, infected, cured, death } = infectionData[
+          layer.feature.properties["GID_1"]
+        ]
 
         let tooltipContent = `
-              <div><strong>${data.province}</strong></div>
-              <div>Số ca nhiễm: ${data.infected}</div>
+              <div><strong>${province}</strong></div>
             `
+
+        if (infected <= cured + death) {
+          tooltipContent += `Đã chữa khỏi các ca nhiễm`
+        } else {
+          tooltipContent += `
+              <div>Số ca nhiễm: ${infected}</div>`
+        }
 
         layer
           .bindTooltip(
@@ -134,6 +154,10 @@ const initMap = (infectionDataArr, setLoading, createButton) => {
      * Circle for each virus source
      */
     for (let { node: province } of circles) {
+      if (province.infected <= province.cured + province.death) {
+        continue
+      }
+
       const popupContent = `${province.province} - Số ca nhiễm: ${province.infected}`
 
       L.circleMarker(province.latlong, {
@@ -189,7 +213,11 @@ const initMap = (infectionDataArr, setLoading, createButton) => {
 
 class MapVN extends Component {
   componentDidMount() {
-    initMap(this.props.infectionData, this.props.setLoading, this.createSwitchMapButton)
+    initMap(
+      this.props.infectionData,
+      this.props.setLoading,
+      this.createSwitchMapButton
+    )
   }
 
   createSwitchMapButton = containerId => {
