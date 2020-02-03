@@ -8,12 +8,14 @@ import MapWorld from "../components/map-world"
 import Content from "../components/content"
 import DataTableVN from "../components/data-table-vn"
 import DataTableWorld from "../components/data-table-world"
+import Loader from "../components/loader"
 
 import classes from "../styles/index.module.css"
 
 class Index extends Component {
   state = {
     mapType: "vn",
+    loading: true,
   }
 
   setMapType = type => {
@@ -23,6 +25,13 @@ class Index extends Component {
 
     this.setState({
       mapType: type,
+      loading: true,
+    })
+  }
+
+  setLoadingState = state => {
+    this.setState({
+      loading: !!state,
     })
   }
 
@@ -34,14 +43,18 @@ class Index extends Component {
       this.state.mapType === "vn" ? (
         <MapVN
           setMap={this.setMapType}
+          setLoading={this.setLoadingState}
           infectionData={data.allInfectionVnJson.edges}
         />
       ) : (
         <MapWorld
           setMap={this.setMapType}
+          setLoading={this.setLoadingState}
           infectionData={data.allInfectionWorldJson.edges}
         />
       )
+
+    const loader = this.state.loading ? <Loader /> : ""
 
     const dataTableComponent =
       this.state.mapType === "vn" ? (
@@ -54,7 +67,10 @@ class Index extends Component {
       <Layout location={location}>
         <SEO title={siteTitle} />
         <div className={classes.container}>
-          <div className={classes.mapContainer}>{mapComponent}</div>
+          <div className={classes.mapContainer}>
+            {mapComponent}
+            {loader}
+          </div>
           <div className={classes.infoTable}>{dataTableComponent}</div>
         </div>
         <Content updatedDate={data.site.siteMetadata.updatedDate} />

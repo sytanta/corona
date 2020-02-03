@@ -25,6 +25,7 @@ a {
 .mapContainer {
   flex-grow: 2;
   height: 500px;
+  position: relative;
 }
 .infoTable {
   background-color: #191A1A;

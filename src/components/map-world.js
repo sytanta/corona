@@ -3,7 +3,7 @@ import ReactDOM from "react-dom"
 
 import classes from "../styles/map.module.css"
 
-const initMap = (infectionDataArr, createButton) => {
+const initMap = (infectionDataArr, setLoading, createButton) => {
   const d3 = window.d3
   const L = window.L
 
@@ -30,6 +30,8 @@ const initMap = (infectionDataArr, createButton) => {
   }).setView([0, 0], 2)
 
   Promise.all([d3.json("/data/world-50m-wba3.geojson")]).then(result => {
+    setLoading(false)
+
     const collection = result[0]
 
     const infectionData = infectionDataArr.reduce((acc, item) => {
@@ -201,7 +203,7 @@ const initMap = (infectionDataArr, createButton) => {
 
 class MapWorld extends Component {
   componentDidMount() {
-    initMap(this.props.infectionData, this.createSwitchMapButton)
+    initMap(this.props.infectionData, this.props.setLoading, this.createSwitchMapButton)
   }
 
   createSwitchMapButton = containerId => {

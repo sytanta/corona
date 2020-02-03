@@ -3,7 +3,7 @@ import ReactDOM from "react-dom"
 
 import classes from "../styles/map.module.css"
 
-const initMap = (infectionDataArr, createButton) => {
+const initMap = (infectionDataArr, setLoading, createButton) => {
   const d3 = window.d3
   const L = window.L
 
@@ -33,6 +33,8 @@ const initMap = (infectionDataArr, createButton) => {
     d3.json("/data/vn-province.geojson"),
     d3.json("/data/vn.geojson"),
   ]).then(result => {
+    setLoading(false)
+
     const collection = result[0],
       circles = infectionDataArr,
       vngeo = result[1]
@@ -187,7 +189,7 @@ const initMap = (infectionDataArr, createButton) => {
 
 class MapVN extends Component {
   componentDidMount() {
-    initMap(this.props.infectionData, this.createSwitchMapButton)
+    initMap(this.props.infectionData, this.props.setLoading, this.createSwitchMapButton)
   }
 
   createSwitchMapButton = containerId => {

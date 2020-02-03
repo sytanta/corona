@@ -10,7 +10,7 @@ const DataTableWorld = ({ data }) => {
   }, {
     total: 0, cured: 0, death: 0
   })
-    console.log('1111qqq111111', data)
+
   return (
     <table>
       <thead>
