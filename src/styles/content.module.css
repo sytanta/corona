@@ -54,6 +54,7 @@
 }
 .hotlines a {
   color: khaki;
+  text-decoration: underline;
 }
 
 .contact {
