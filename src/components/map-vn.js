@@ -154,6 +154,12 @@ const initMap = (infectionDataArr, setLoading, createButton) => {
      * Circle for each virus source
      */
     for (let { node: province } of circles) {
+      // Location name
+      L.marker(
+        [province.latlong[0], province.latlong[1]],
+        { icon: L.divIcon({ className: classes.locationName, html: province.province }) }
+      ).addTo(map)
+
       if (province.infected <= province.cured + province.death) {
         continue
       }
