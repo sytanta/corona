@@ -164,7 +164,7 @@ const initMap = (infectionDataArr, setLoading, createButton) => {
         color: "red",
         fillColor: "#f03",
         fillOpacity: 0.5,
-        radius: province.infected * 10,
+        radius: province.infected,
         weight: 1,
       })
         .addTo(map)
