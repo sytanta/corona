@@ -13,7 +13,7 @@
     "province": "Tỉnh Khánh Hòa",
     "latlong": [12.310702, 109.004585],
     "infected": 1,
-    "cured": 0,
+    "cured": 1,
     "death": 0,
     "note": "Bệnh nhân làm lễ tân tại TP Nha Trang, ngày 16/1 có tiếp xúc với 2 bệnh nhân người Trung Quốc"
   },
