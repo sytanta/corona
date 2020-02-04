@@ -154,27 +154,30 @@ const initMap = (infectionDataArr, setLoading, createButton) => {
      * Circle for each virus source
      */
     for (let { node: province } of circles) {
-      // Location name
-      L.marker(
-        [province.latlong[0], province.latlong[1]],
-        { icon: L.divIcon({ className: classes.locationName, html: province.province }) }
-      ).addTo(map)
-
-      if (province.infected <= province.cured + province.death) {
-        continue
-      }
-
+      const isUnCured = province.infected > province.cured + province.death
       const popupContent = `${province.province} - Số ca nhiễm: ${province.infected}`
 
-      L.circleMarker(province.latlong, {
-        color: "red",
-        fillColor: "#f03",
+      // Location name
+      L.marker([province.latlong[0], province.latlong[1]], {
+        icon: L.divIcon({
+          className: isUnCured
+            ? `${classes.locationName} ${classes.locationNameUnCured}`
+            : `${classes.locationName} ${classes.locationNameCured}`,
+          html: province.province,
+        }),
+      }).addTo(map)
+
+      const cm = L.circleMarker(province.latlong, {
+        color: isUnCured ? "red" : "darkgreen",
+        fillColor: isUnCured ? "#f03" : "darkgreen",
         fillOpacity: 0.5,
-        radius: province.infected,
+        radius: isUnCured ? province.infected : 2,
         weight: 1,
-      })
-        .addTo(map)
-        .bindPopup(popupContent)
+      }).addTo(map)
+
+      if (isUnCured) {
+        cm.bindPopup(popupContent)
+      }
     }
 
     /**

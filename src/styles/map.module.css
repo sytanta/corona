@@ -72,9 +72,16 @@
 .locationName {
   margin-left: 8px !important;
   height: auto;
-  color: ghostwhite;
   font-size: 0.6rem;
   width: max-content !important;
+}
+
+.locationNameUnCured {
+  color: darkorange;
+}
+
+.locationNameCured {
+  color: darkolivegreen;
 }
 
 .tooltip {
