@@ -5,13 +5,11 @@ const DataTableWorld = ({ data }) => {
     (acc, item) => {
       return {
         total: acc.total + +item.node.infected,
-        cured: acc.cured + +item.node.cured,
         death: acc.death + +item.node.death,
       }
     },
     {
       total: 0,
-      cured: 0,
       death: 0,
     }
   )
@@ -23,7 +21,6 @@ const DataTableWorld = ({ data }) => {
           <tr>
             <th>Nước</th>
             <th>Số ca</th>
-            <th>Chữa khỏi</th>
             <th>Tử vong</th>
           </tr>
         </thead>
@@ -32,14 +29,12 @@ const DataTableWorld = ({ data }) => {
             <tr key={item.WB_A3}>
               <td>{item.name}</td>
               <td>{item.infected}</td>
-              <td>{item.cured}</td>
               <td>{item.death}</td>
             </tr>
           ))}
           <tr>
             <td>Tổng số ca</td>
             <td>{total}</td>
-            <td>{cured}</td>
             <td>{death}</td>
           </tr>
         </tbody>
