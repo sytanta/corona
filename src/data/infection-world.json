@@ -2,15 +2,15 @@
   {
     "WB_A3": "CHN",
     "name": "China",
-    "infected": "14380",
-    "death": "304",
+    "infected": "17205",
+    "death": "361",
     "cured": "0",
     "isolated": "0"
   },
   {
     "WB_A3": "HKG",
     "name": "Hong Kong SAR",
-    "infected": "14",
+    "infected": "15",
     "death": "0",
     "cured": "0",
     "isolated": "0"
@@ -18,7 +18,7 @@
   {
     "WB_A3": "MAC",
     "name": "Macau SAR",
-    "infected": "7",
+    "infected": "8",
     "death": "0",
     "cured": "0",
     "isolated": "0"
@@ -50,7 +50,7 @@
   {
     "WB_A3": "VNM",
     "name": "Viet Nam",
-    "infected": "7",
+    "infected": "8",
     "death": "0",
     "cured": "0",
     "isolated": "0"
@@ -122,7 +122,7 @@
   {
     "WB_A3": "IND",
     "name": "India",
-    "infected": "2",
+    "infected": "3",
     "death": "0",
     "cured": "0",
     "isolated": "0"
@@ -130,7 +130,7 @@
   {
     "WB_A3": "USA",
     "name": "United States of America",
-    "infected": "8",
+    "infected": "11",
     "death": "0",
     "cured": "0",
     "isolated": "0"
@@ -162,7 +162,7 @@
   {
     "WB_A3": "DEU",
     "name": "Germany",
-    "infected": "8",
+    "infected": "10",
     "death": "0",
     "cured": "0",
     "isolated": "0"
