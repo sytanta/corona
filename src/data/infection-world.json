@@ -2,8 +2,8 @@
   {
     "WB_A3": "CHN",
     "name": "China",
-    "infected": "17205",
-    "death": "361",
+    "infected": "20438",
+    "death": "425",
     "cured": "0",
     "isolated": "0"
   },
@@ -42,7 +42,7 @@
   {
     "WB_A3": "KOR",
     "name": "Republic of Korea",
-    "infected": "15",
+    "infected": "16",
     "death": "0",
     "cured": "0",
     "isolated": "0"
@@ -50,7 +50,7 @@
   {
     "WB_A3": "VNM",
     "name": "Viet Nam",
-    "infected": "8",
+    "infected": "9",
     "death": "0",
     "cured": "0",
     "isolated": "0"
@@ -74,7 +74,7 @@
   {
     "WB_A3": "MYS",
     "name": "Malaysia",
-    "infected": "8",
+    "infected": "10",
     "death": "0",
     "cured": "0",
     "isolated": "0"
@@ -162,7 +162,7 @@
   {
     "WB_A3": "DEU",
     "name": "Germany",
-    "infected": "10",
+    "infected": "12",
     "death": "0",
     "cured": "0",
     "isolated": "0"
