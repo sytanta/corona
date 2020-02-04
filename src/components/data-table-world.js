@@ -1,7 +1,7 @@
 import React from "react"
 
 const DataTableWorld = ({ data }) => {
-  const { total, cured, death } = data.reduce(
+  const { total, death } = data.reduce(
     (acc, item) => {
       return {
         total: acc.total + +item.node.infected,

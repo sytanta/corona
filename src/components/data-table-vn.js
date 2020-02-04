@@ -44,7 +44,7 @@ const DataTableVN = ({ data }) => {
           </tr>
         </tbody>
       </table>
-      <div>Cập nhật: 07:30AM 04/02/2020</div>
+      <div>Cập nhật: 09:20AM 04/02/2020</div>
     </>
   )
 }

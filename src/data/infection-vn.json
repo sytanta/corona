@@ -27,6 +27,15 @@
     "note": ""
   },
   {
+    "GID_1": "VNM.62_1",
+    "province": "Tỉnh Vĩnh Phúc",
+    "latlong": [21.364051, 105.568868],
+    "infected": 1,
+    "cured": 0,
+    "death": 0,
+    "note": "Bệnh nhân được công ty cử sang Vũ Hán đào tạo cách đây 2 tháng"
+  },
+  {
     "GID_1": "VNM.27_1",
     "province": "Thành phố Hà Nội",
     "latlong": [21.021009, 105.727314],
