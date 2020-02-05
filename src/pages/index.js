@@ -63,6 +63,20 @@ class Index extends Component {
         <DataTableWorld data={data.allInfectionWorldJson.edges} />
       )
 
+    const additionalNote =
+      this.state.mapType === "vn" ? (
+        <ol className={classes.noteData}>
+          {data.allInfectionVnJson.edges.map(({ node: province }) => (
+            <li key={province["GID_1"]}>
+              <h6>{province.province}</h6>
+              <div dangerouslySetInnerHTML={{ __html: `${province.note}` }} />
+            </li>
+          ))}
+        </ol>
+      ) : (
+        ""
+      )
+
     return (
       <Layout location={location}>
         <SEO title={siteTitle} />
@@ -73,6 +87,7 @@ class Index extends Component {
           </div>
           <div className={classes.infoTable}>{dataTableComponent}</div>
         </div>
+        {additionalNote}
         <Content updatedDate={data.site.siteMetadata.updatedDate} />
       </Layout>
     )

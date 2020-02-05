@@ -32,6 +32,7 @@ a {
   color: #fff;
   flex-grow: 0;
   max-height: 500px;
+  max-width: 50%;
   overflow-x: hidden;
   padding: 0.5rem;
 }
@@ -60,6 +61,15 @@ a {
   text-decoration: underline;
 }
 
+.noteData {
+  background: gray;
+	margin: 0.1rem;
+	padding: 0.5rem 0.5rem 0.5rem 1.7rem;
+}
+.noteData h6 {
+  color: darkorange;
+}
+
 /* @media all and (max-width: 800px) { */
   /* .container { */
     /* When on medium sized screens, we center it by evenly distributing empty space around items */
@@ -70,7 +80,6 @@ a {
 /* Small screens */
 @media all and (max-width: 860px) {
   .container {
-    /* On small screens, we are no longer using row direction but column */
     flex-direction: column;
   }
 }

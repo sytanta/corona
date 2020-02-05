@@ -163,7 +163,7 @@ const initMap = (infectionDataArr, setLoading, createButton) => {
           className: isUnCured
             ? `${classes.locationName} ${classes.locationNameUnCured}`
             : `${classes.locationName} ${classes.locationNameCured}`,
-          html: province.province,
+          html: `${province.province} (${province.infected}-${province.cured})`,
         }),
       }).addTo(map)
 
@@ -200,11 +200,11 @@ const initMap = (infectionDataArr, setLoading, createButton) => {
           <div class="info-content">
             <div>${props.province}: ${props.infected} ca</div>
             <div>Đã chữa khỏi: ${props.cured}</div>
-            <div class=${classes.note}>${props.note}</div>
           </div>
           <div id="${btnContainerId}" class="${classes.buttonContainer}"></div>
           `
       }
+      // <div class=${classes.note}>${props.note}</div>
 
       this._div.innerHTML = content
 
