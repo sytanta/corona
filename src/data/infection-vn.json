@@ -30,16 +30,7 @@
     "GID_1": "VNM.62_1",
     "province": "Tỉnh Vĩnh Phúc",
     "latlong": [21.364051, 105.568868],
-    "infected": 2,
-    "cured": 0,
-    "death": 0,
-    "note": "Hai bệnh nhân là người nhà trong đó một nữ bệnh nhân được công ty cử sang Vũ Hán đào tạo vào tháng 2/2020"
-  },
-  {
-    "GID_1": "VNM.27_1",
-    "province": "Thành phố Hà Nội",
-    "latlong": [21.021009, 105.727314],
-    "infected": 3,
+    "infected": 5,
     "cured": 0,
     "death": 0,
     "note": ""
