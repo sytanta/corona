@@ -27,10 +27,12 @@ const initMap = (infectionDataArr, setLoading, createButton) => {
     maxBounds: maxBounds,
     maxBoundsViscosity: 0.8,
     layers: [grayScale],
-  }).setView([0, 0], 2)
+  }).setView([0, 0], 1)
 
   Promise.all([d3.json("/data/world-50m-wba3.geojson")]).then(result => {
     setLoading(false)
+
+    const circles = infectionDataArr
 
     const collection = result[0]
 
@@ -54,14 +56,18 @@ const initMap = (infectionDataArr, setLoading, createButton) => {
         : "#FED976"
     }
 
+    function getRadius(n) {
+      return n > 100 ? 12 : n > 30 ? 8 : n > 20 ? 6 : n > 10 ? 4 : 2
+    }
+
     function style(feature) {
       const infected = infectionData[feature.properties["WB_A3"]]
         ? +infectionData[feature.properties["WB_A3"]].infected
         : 0
 
       return {
-        fillColor: infected ? getColor(infected) : "none",
-        color: infected ? "white" : "transparent",
+        fillColor: infected ? "seashell" : "none",
+        color: infected ? "gray" : "transparent",
         cursor: "move",
         strokeWidth: "0",
         dashArray: infected ? "2" : "",
@@ -83,13 +89,14 @@ const initMap = (infectionDataArr, setLoading, createButton) => {
       }
 
       layer.setStyle({
-        fillOpacity: 0.7,
-        weight: 2,
+        fillColor: "tan",
+        fillOpacity: 1,
+        weight: 1,
       })
 
-      if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
-        layer.bringToFront()
-      }
+      // if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
+      //   layer.bringToFront()
+      // }
     }
 
     function resetHighlight(e) {
@@ -126,6 +133,36 @@ const initMap = (infectionDataArr, setLoading, createButton) => {
             { className: "tooltip" }
           )
           .setTooltipContent(tooltipContent)
+      }
+    }
+
+    /**
+     * Circle for each virus source
+     */
+    for (let { node: country } of circles) {
+      const isUnCured = country.infected > country.cured + country.death
+      const popupContent = `${country.name} - Số ca nhiễm: ${country.infected}`
+
+      // Location name
+      // L.marker([country.latlong[0], country.latlong[1]], {
+      //   icon: L.divIcon({
+      //     className: isUnCured
+      //       ? `${classes.locationName} ${classes.locationNameUnCured}`
+      //       : `${classes.locationName} ${classes.locationNameCured}`,
+      //     html: `${country.name} (${country.infected}-${country.cured})`,
+      //   }),
+      // }).addTo(map)
+
+      const cm = L.circleMarker(country.latlong, {
+        color: isUnCured ? "red" : "darkgreen",
+        fillColor: isUnCured ? "#f03" : "darkgreen",
+        fillOpacity: 0.7,
+        radius: isUnCured ? getRadius(country.infected) : 1,
+        weight: 1,
+      }).addTo(map)
+
+      if (isUnCured) {
+        cm.bindPopup(popupContent)
       }
     }
 
@@ -174,20 +211,20 @@ const initMap = (infectionDataArr, setLoading, createButton) => {
 
     legend.onAdd = function(map) {
       const div = L.DomUtil.create("div", `${classes.legend} ${classes.info}`),
-        grades = [0, 5, 10, 20, 50, 100],
+        // grades = [0, 5, 10, 20, 50, 100],
+        grades = [0, 10, 20, 30, 100],
         labels = []
-      let from, to
+      let from, to, size
 
       for (let i = 0; i < grades.length; i++) {
         from = grades[i]
         to = grades[i + 1]
+        size = getRadius(from + 1) * 2 + 1
 
         labels.push(
-          '<i style="background:' +
-            getColor(from + 1) +
-            '"></i> ' +
-            from +
-            (to ? "&ndash;" + to : "+")
+          `<span><i style="border-radius: 50%; width: ${size}px; height: ${size}px;"></i></span> ${from} ${
+            to ? "&ndash;" + to : "+"
+          }`
         )
       }
 
@@ -203,7 +240,11 @@ const initMap = (infectionDataArr, setLoading, createButton) => {
 
 class MapWorld extends Component {
   componentDidMount() {
-    initMap(this.props.infectionData, this.props.setLoading, this.createSwitchMapButton)
+    initMap(
+      this.props.infectionData,
+      this.props.setLoading,
+      this.createSwitchMapButton
+    )
   }
 
   createSwitchMapButton = containerId => {
