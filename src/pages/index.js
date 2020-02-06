@@ -124,6 +124,7 @@ export const pageQuery = graphql`
         node {
           WB_A3
           name
+          latlong
           infected
           cured
           death
