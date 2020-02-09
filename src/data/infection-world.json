@@ -3,8 +3,8 @@
     "WB_A3": "CHN",
     "name": "China",
     "latlong": [34.759129, 106.040330],
-    "infected": "31161",
-    "death": "636",
+    "infected": "34546",
+    "death": "722",
     "cured": "0",
     "isolated": "0"
   },
@@ -12,7 +12,7 @@
     "WB_A3": "HKG",
     "name": "Hong Kong SAR",
     "latlong": [22.403277, 114.164710],
-    "infected": "24",
+    "infected": "26",
     "death": "1",
     "cured": "0",
     "isolated": "0"
@@ -57,7 +57,7 @@
     "WB_A3": "VNM",
     "name": "Viet Nam",
     "latlong": [16.126218, 107.787331],
-    "infected": "12",
+    "infected": "13",
     "death": "0",
     "cured": "0",
     "isolated": "0"
@@ -66,7 +66,7 @@
     "WB_A3": "SGP",
     "name": "Singapore",
     "latlong": [1.375024, 103.810883],
-    "infected": "30",
+    "infected": "33",
     "death": "0",
     "cured": "0",
     "isolated": "0"
@@ -84,7 +84,7 @@
     "WB_A3": "MYS",
     "name": "Malaysia",
     "latlong": [4.281275, 102.343710],
-    "infected": "14",
+    "infected": "15",
     "death": "0",
     "cured": "0",
     "isolated": "0"
@@ -111,7 +111,7 @@
     "WB_A3": "THA",
     "name": "Thailand",
     "latlong": [15.256644, 101.523958],
-    "infected": "25",
+    "infected": "32",
     "death": "0",
     "cured": "0",
     "isolated": "0"
@@ -183,7 +183,7 @@
     "WB_A3": "DEU",
     "name": "Germany",
     "latlong": [51.275382, 10.436646],
-    "infected": "13",
+    "infected": "14",
     "death": "0",
     "cured": "0",
     "isolated": "0"
@@ -246,7 +246,7 @@
     "WB_A3": "ARE",
     "name": "United Arab Emirates",
     "latlong": [23.668243, 54.290915],
-    "infected": "5",
+    "infected": "7",
     "death": "0",
     "cured": "0",
     "isolated": "0"
