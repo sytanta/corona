@@ -70,6 +70,9 @@ a {
 .noteData h6 {
   color: darkorange;
 }
+.noteData span {
+  color: darkblue;
+}
 
 /* @media all and (max-width: 800px) { */
   /* .container { */
