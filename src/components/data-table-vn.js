@@ -23,7 +23,7 @@ const DataTableVN = ({ data }) => {
           <tr>
             <th>Tỉnh/Thành phố</th>
             <th>Số ca</th>
-            <th>Chữa khỏi</th>
+            <th>Xuất viện</th>
             <th>Tử vong</th>
           </tr>
         </thead>
