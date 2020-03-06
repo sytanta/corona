@@ -216,6 +216,24 @@
     "isolated": "0"
   },
   {
+    "WB_A3": "MAF",
+    "name": "Saint Martin",
+    "latlong": [18.083752, -63.052543],
+    "infected": "2",
+    "death": "0",
+    "cured": "0",
+    "isolated": "0"
+  },
+  {
+    "WB_A3": "BLM",
+    "name": "Saint Barthélemy",
+    "latlong": [17.897636, -62.830943],
+    "infected": "1",
+    "death": "0",
+    "cured": "0",
+    "isolated": "0"
+  },
+  {
     "WB_A3": "ECU",
     "name": "Ecuador",
     "latlong": [-1.283132, -78.408605],
@@ -697,6 +715,15 @@
     "name": "Tunisia",
     "latlong": [34.157489, 9.171528],
     "infected": "1",
+    "death": "0",
+    "cured": "0",
+    "isolated": "0"
+  },
+  {
+    "WB_A3": "OPT",
+    "name": "occupied Palestinian territory",
+    "latlong": [32.001200, 35.306650],
+    "infected": "4",
     "death": "0",
     "cured": "0",
     "isolated": "0"
