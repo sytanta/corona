@@ -1,6 +1,17 @@
 import React from "react"
 
 const DataTableWorld = ({ data }) => {
+  const sortedData = data.sort((item, nextItem) => {
+    if (+item.node.infected > +nextItem.node.infected) {
+      return -1
+    }
+    if (+item.node.infected < +nextItem.node.infected) {
+      return 1
+    }
+
+    return 0
+  })
+
   const { total, death } = data.reduce(
     (acc, item) => {
       return {
@@ -25,7 +36,7 @@ const DataTableWorld = ({ data }) => {
           </tr>
         </thead>
         <tbody>
-          {data.map(({ node: item }) => (
+          {sortedData.map(({ node: item }) => (
             <tr key={item.WB_A3}>
               <td>{item.name}</td>
               <td>{item.infected}</td>
@@ -39,7 +50,7 @@ const DataTableWorld = ({ data }) => {
           </tr>
         </tbody>
       </table>
-      <div>Cập nhật 04/03/2020. Nguồn: WHO</div>
+      <div>Cập nhật 05/03/2020. Nguồn: WHO</div>
     </>
   )
 }
