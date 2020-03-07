@@ -1,12 +1,21 @@
 [
   {
+    "GID_1": "VNM.42_1",
+    "province": "Binh Bình",
+    "latlong": [20.215468, 105.929260],
+    "infected": 1,
+    "cured": 0,
+    "death": 0,
+    "note": "<p>07/03/2020 - Bệnh nhân thứ 18 quê ở Ninh Bình. Ngày 17/2, anh đến sân bay quốc tế Gimhae ở thành phố Busan, sau đó di chuyển về thành phố Daegu (Hàn Quốc). Đi cùng anh có người em gái 24 tuổi. Hai anh em cùng hai người bạn Việt Nam đi siêu thị tại Daegu hai lần vào ngày 18-19/2. Hai người bạn này đã về Việt Nam hôm 26/2, được cách ly tại Trường Quân sự Sơn Tây (Hà Nội) theo quy định. Ngày 4/3, anh trở về Việt Nam trên chuyến bay VJ981 từ Busan đến Vân Đồn. Sau khi nhập cảnh, anh được cách ly tập trung, lấy mẫu xét nghiệm, kết quả dương tính với nCoV.</p>"
+  },
+  {
     "GID_1": "VNM.27_1",
     "province": "Hà Nội",
     "latlong": [20.991397, 105.737776],
     "infected": 1,
     "cured": 0,
     "death": 0,
-    "note": "<p>06/03/2020 - Bệnh nhân thứ 17 là một cô gái sinh năm 1993, hộ khẩu TP HCM, tạm trú ở phường Trúc Bạch. Ngày 15/2, cô bay từ Nội Bài (Hà Nội) đi London thăm gia đình. Hai ngày sau, cô sang Milan (Ý) 2 ngày; đến 20/2, quay lại Anh, ở đây 2 ngày rồi đến 25/2, đi tàu sang Paris (Pháp). Ngày 26/2, cô gái quay lại London. Trong thời gian ở châu Âu, cô gái tiếp xúc với nhiều người có biểu hiện ho, hắt hơi. Ngày 28/2 tại London (Anh), cô gái xuất hiện triệu chứng ho, không rõ sốt tuy nhiên không đi khám ở đâu chỉ ở tại nhà người thân.</p>"
+    "note": "<p>06/03/2020 - Bệnh nhân thứ 17 là N.H.N., một cô gái sinh năm 1993, hộ khẩu TP HCM, tạm trú ở phường Trúc Bạch. Ngày 15/2, cô bay từ Nội Bài (Hà Nội) đi London thăm gia đình. Hai ngày sau, cô sang Milan (Ý) 2 ngày; đến 20/2, quay lại Anh, ở đây 2 ngày rồi đến 25/2, đi tàu sang Paris (Pháp). Ngày 26/2, cô gái quay lại London. Trong thời gian ở châu Âu, cô gái tiếp xúc với nhiều người có biểu hiện ho, hắt hơi. Ngày 28/2 tại London (Anh), cô gái xuất hiện triệu chứng ho, không rõ sốt tuy nhiên không đi khám ở đâu chỉ ở tại nhà người thân.</p>"
   },
   {
     "GID_1": "VNM.62_1",
