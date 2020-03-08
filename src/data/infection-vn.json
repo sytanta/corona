@@ -1,5 +1,41 @@
 [
   {
+    "GID_1": "VNM.54_1",
+    "province": "Thừa Thiên Huế",
+    "latlong": [16.341725, 107.499350],
+    "infected": 1,
+    "cured": 0,
+    "death": 0,
+    "note": "<p>1 bệnh nhân người Anh tại Khách sạn ở thành phố Huế, nhập cảnh trên chuyến bay VN0054, đã chuyển về Bệnh viện đa khoa Trung ương Huế cơ sở 2 ngày 7/3.</p>"
+  },
+  {
+    "GID_1": "VNM.38_1",
+    "province": "Lào Cai",
+    "latlong": [22.376905, 104.142412],
+    "infected": 2,
+    "cured": 0,
+    "death": 0,
+    "note": "<p>2 bệnh nhân người Anh tại khách sạn ở Sapa, tỉnh Lào Cai, nhập cảnh trên chuyến bay VN0054, đã chuyển về Bệnh viện đa khoa tỉnh Lào Cai ngày 7/3.</p>"
+  },
+  {
+    "GID_1": "VNM.19_1",
+    "province": "Đà Nẵng",
+    "latlong": [16.073695, 108.078852],
+    "infected": 2,
+    "cured": 0,
+    "death": 0,
+    "note": "<p>2 bệnh nhân người Anh tại khách sạn ở quận Hải Châu, thành phố Đà Nẵng, nhập cảnh trên chuyến bay VN0054, chuyển về Bệnh viện Đà Nẵng ngày 7/3.</p>"
+  },
+  {
+    "GID_1": "VNM.49_1",
+    "province": "Quảng Ninh",
+    "latlong": [21.249395, 107.337213],
+    "infected": 4,
+    "cured": 0,
+    "death": 0,
+    "note": "<p>3 bệnh nhân người Anh, 1 người Ireland.</p>"
+  },
+  {
     "GID_1": "VNM.42_1",
     "province": "Binh Bình",
     "latlong": [20.215468, 105.92926],
