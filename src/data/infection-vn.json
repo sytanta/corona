@@ -6,7 +6,7 @@
     "infected": 1,
     "cured": 0,
     "death": 0,
-    "note": "<p>1 bệnh nhân người Anh tại Khách sạn ở thành phố Huế, nhập cảnh trên chuyến bay VN0054, đã chuyển về Bệnh viện đa khoa Trung ương Huế cơ sở 2 ngày 7/3.</p>"
+    "note": "<p>Bệnh nhân thứ 30 là nữ, 66 tuổi, mang quốc tịch Anh. Sau khi đáp xuống sân bay Nội Bài (chuyến bay VN0054) lúc rạng sáng 2/3, nữ du khách này ở lại 3 ngày đêm tại Hà Nội, sau đó đi Hải Phòng bằng tàu du lịch trước khi quay lại sân bay Nội Bài. Người này đáp chuyến bay từ Hà Nội vào Thừa Thiên - Huế trên phi cơ mang số hiệu VN1547. Đến Thừa Thiên - Huế, người này được tài xế và hướng dẫn viên đưa về khách sạn Moonlight (đường Phạm Ngũ lão). Tại đây, người này chỉ đi ra ngoài ăn tối sau đó quay về khách sạn.</p>"
   },
   {
     "GID_1": "VNM.38_1",
@@ -15,7 +15,7 @@
     "infected": 2,
     "cured": 0,
     "death": 0,
-    "note": "<p>2 bệnh nhân người Anh tại khách sạn ở Sapa, tỉnh Lào Cai, nhập cảnh trên chuyến bay VN0054, đã chuyển về Bệnh viện đa khoa tỉnh Lào Cai ngày 7/3.</p>"
+    "note": "<p>2 vợ chồng người Anh đã ngồi ở khoang hạng C, số ghế 7B và 7C trên chuyến bay mang số hiệu VN0054 của Vietnam Airlines, cùng chuyến bay với bệnh nhân N.H.N, người mắc Covid-19 thứ 17 của Việt Nam. Qua điều tra dịch tễ, Sở Y tế tỉnh Lào Cai cho biết sau khi xuống sân bay Nội Bài, 2 người đã đi tàu hỏa Livitras từ Hà Nội đến Lào Cai vào lúc 22h ngày 4/3 và ở lại Sa Pa trong ngày 5-6/3. Đến 15h ngày 7/3, cặp vợ chồng này được xe Bệnh viện Đa khoa tỉnh đón về cách ly tại bệnh viện và xét nghiệm cho thấy cả 2 đều nhiễm Covid-19. Hiện, bệnh nhân nam sốt 38,3 độ C, không ho, không khó thở. Bệnh nhân nữ không sốt.</p>"
   },
   {
     "GID_1": "VNM.19_1",
@@ -33,7 +33,7 @@
     "infected": 4,
     "cured": 0,
     "death": 0,
-    "note": "<p>3 bệnh nhân người Anh, 1 người Ireland.</p>"
+    "note": "<p>Bệnh nhân S.K. (50 tuổi, nữ, quốc tịch Ireland, tạm trú tại khách sạn WyndHam, TP Hạ Long). Du khách này nhập cảnh ngày 2/3 tại sân bay Nội Bài, sau đó về bằng xe khách sạn (lái xe là N.Đ.L., tổ 6, khu 2, phường Việt Hưng - hiện được cách ly tại nhà riêng, sức khỏe bình thường). Tại Hạ Long, bà S. đi ăn tại một số quán cà phê và nhà hàng. Đến ngày 5/3, nữ du khách đi thăm Vịnh Hạ Long trên tàu du lịch QN-5626 (còn 1 nhà hàng chưa có thông tin tiếp xúc).</p><p>Hai bệnh nhân người Anh khác là D.G. (74 tuổi, nam) và Sh.B. (67 tuổi, nam). Hai du khách này đi từ sân bay Nội Bài về TP Hạ Long bằng xe thuê riêng, tổng số người có liên quan đến xe đón đoàn có 5 người. Lúc 11h30 ngày 5/3, hai người này xuống tàu từ Cảng Tuần Châu và ăn trưa trên tàu. 15h cùng ngày, họ đi tham quan hang Tiên Ông, làng chài Cửa Vạn. Hai giờ sau, họ quay về tàu và tối ăn nghỉ tại đây. 7h30 ngày 6/3, hai du khách sang tàu Sunset ăn sáng, sau đó tham quan hang Sửng Sốt. 11h30, họ quay về tàu Sunset ăn trưa, buổi chiều tàu chở đến hang Luồn để chèo kayak và tham quan khu nuôi ngọc trai. 17h00, cả hai quay trở về tàu QN-5228. Ngày 7/3, hai du khách Anh cập bến cảng tàu Tuần Châu.</p><p>Một bệnh nhân người Anh khác là R.A. (58 tuổi, nam). 11h30 ngày 6/3, du khách này đến Văn phòng du thuyền Athena, cảng Hòn Gai Vinashin, sau đó lên tàu QN-8788 đi làng chài Vung Viêng. 15h45 cùng ngày, ông A. ngồi thuyền nan tham quan làng chàng Vung Viêng. Một giờ sau, ông này quay về tàu QN-8788. 8h30 ngày 7/3, nam du khách chuyển sang tàu QN-7519 đi tham quan khu vực Cống Đỏ. Đến 16h10 ngày 7/3, ông A. cập cảng Vinashin, được đưa vào cách ly tại khách sạn Thái Sơn, phường Bãi Cháy.</p>"
   },
   {
     "GID_1": "VNM.42_1",
