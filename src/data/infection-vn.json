@@ -3,19 +3,19 @@
     "GID_1": "VNM.47_1",
     "province": "Quảng Nam",
     "latlong": [15.622809, 108.001084],
-    "infected": 2,
+    "infected": 1,
     "cured": 0,
     "death": 0,
-    "note": "<p>10/03/2020 - Bệnh nhân số 33 là nam, 58 tuổi, quốc tịch Anh, là hành khách cùng đi trên chuyến bay VN0054 đang lưu trú tại thành phố Hội An, tỉnh Quảng Nam.</p><p>09/03/2020 - Bệnh nhân thứ 31 là nam, 49 tuổi, quốc tịch Anh, cùng đi trên chuyến bay VN0054.</p>"
+    "note": "<p>10/03/2020 - Bệnh nhân số 33 là nam, 58 tuổi, quốc tịch Anh, là hành khách cùng đi trên chuyến bay VN0054 đang lưu trú tại thành phố Hội An, tỉnh Quảng Nam.</p>"
   },
   {
     "GID_1": "VNM.54_1",
     "province": "Thừa Thiên Huế",
     "latlong": [16.341725, 107.499350],
-    "infected": 1,
+    "infected": 2,
     "cured": 0,
     "death": 0,
-    "note": "<p>08/03/2020 - Bệnh nhân thứ 30 là nữ, 66 tuổi, mang quốc tịch Anh. Sau khi đáp xuống sân bay Nội Bài (chuyến bay VN0054) lúc rạng sáng 2/3, nữ du khách này ở lại 3 ngày đêm tại Hà Nội, sau đó đi Hải Phòng bằng tàu du lịch trước khi quay lại sân bay Nội Bài. Người này đáp chuyến bay từ Hà Nội vào Thừa Thiên - Huế trên phi cơ mang số hiệu VN1547. Đến Thừa Thiên - Huế, người này được tài xế và hướng dẫn viên đưa về khách sạn Moonlight (đường Phạm Ngũ lão). Tại đây, người này chỉ đi ra ngoài ăn tối sau đó quay về khách sạn.</p>"
+    "note": "<p>09/03/2020 - Bệnh nhân thứ 31 là nam, 49 tuổi, quốc tịch Anh, cùng đi trên chuyến bay VN0054.</p><p>08/03/2020 - Bệnh nhân thứ 30 là nữ, 66 tuổi, mang quốc tịch Anh. Sau khi đáp xuống sân bay Nội Bài (chuyến bay VN0054) lúc rạng sáng 2/3, nữ du khách này ở lại 3 ngày đêm tại Hà Nội, sau đó đi Hải Phòng bằng tàu du lịch trước khi quay lại sân bay Nội Bài. Người này đáp chuyến bay từ Hà Nội vào Thừa Thiên - Huế trên phi cơ mang số hiệu VN1547. Đến Thừa Thiên - Huế, người này được tài xế và hướng dẫn viên đưa về khách sạn Moonlight (đường Phạm Ngũ lão). Tại đây, người này chỉ đi ra ngoài ăn tối sau đó quay về khách sạn.</p>"
   },
   {
     "GID_1": "VNM.38_1",
