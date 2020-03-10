@@ -57,7 +57,7 @@ const initMap = (infectionDataArr, setLoading, createButton) => {
     }
 
     function getRadius(n) {
-      return n > 100 ? 12 : n > 30 ? 8 : n > 20 ? 6 : n > 10 ? 4 : 2
+      return n > 1000 ? 12 : n > 500 ? 8 : n > 100 ? 6 : n > 30 ? 4 : 2
     }
 
     function style(feature) {
@@ -212,7 +212,8 @@ const initMap = (infectionDataArr, setLoading, createButton) => {
     legend.onAdd = function(map) {
       const div = L.DomUtil.create("div", `${classes.legend} ${classes.info}`),
         // grades = [0, 5, 10, 20, 50, 100],
-        grades = [0, 10, 20, 30, 100],
+        // grades = [0, 10, 20, 30, 100],
+        grades = [0, 30, 100, 500, 1000],
         labels = []
       let from, to, size
 
