@@ -1,5 +1,14 @@
 [
   {
+    "GID_1": "VNM.11_1",
+    "province": "Bình Thuận",
+    "latlong": [11.136164, 108.126776],
+    "infected": 1,
+    "cured": 0,
+    "death": 0,
+    "note": "<p>10/03/2020 - Bệnh nhân số 34 là một phụ nữ 51 tuổi, cư trú tỉnh Bình Thuận. Ngày 22/2 bà bay từ Việt Nam sang New York, quá cảnh tại sân bay Incheon của Hàn Quốc trong 3 giờ. Một tuần sau, bà từ Mỹ về Việt Nam, quá cảnh tại sân bay ở Doha, Qatar, nhập cảnh sáng 2/3 tại Tân Sơn Nhất. Sau đó bà đi ô tô về Bình Thuận.</p>"
+  },
+  {
     "GID_1": "VNM.47_1",
     "province": "Quảng Nam",
     "latlong": [15.622809, 108.001084],
@@ -11,7 +20,7 @@
   {
     "GID_1": "VNM.54_1",
     "province": "Thừa Thiên Huế",
-    "latlong": [16.341725, 107.499350],
+    "latlong": [16.341725, 107.49935],
     "infected": 2,
     "cured": 0,
     "death": 0,
