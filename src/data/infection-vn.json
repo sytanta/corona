@@ -3,10 +3,10 @@
     "GID_1": "VNM.47_1",
     "province": "Quảng Nam",
     "latlong": [15.622809, 108.001084],
-    "infected": 1,
+    "infected": 2,
     "cured": 0,
     "death": 0,
-    "note": "<p>09/03/2020 - Bệnh nhân thứ 31 là nam, 49 tuổi, quốc tịch Anh, cùng đi trên chuyến bay VN0054.</p>"
+    "note": "<p>10/03/2020 - Bệnh nhân số 33 là nam, 58 tuổi, quốc tịch Anh, là hành khách cùng đi trên chuyến bay VN0054 đang lưu trú tại thành phố Hội An, tỉnh Quảng Nam.</p><p>09/03/2020 - Bệnh nhân thứ 31 là nam, 49 tuổi, quốc tịch Anh, cùng đi trên chuyến bay VN0054.</p>"
   },
   {
     "GID_1": "VNM.54_1",
@@ -75,10 +75,10 @@
     "GID_1": "VNM.25_1",
     "province": "Thành phố Hồ Chí Minh",
     "latlong": [10.781775, 106.69334],
-    "infected": 3,
+    "infected": 4,
     "cured": 3,
     "death": 0,
-    "note": "<p>T.H.K., sinh năm 1947, quốc tịch Mỹ. Ngày 14/1, bệnh nhân bay từ Mỹ về Việt Nam trên chuyến bay ký hiệu 660 của hãng hàng không China Southern. Ngày 15/1 ông K. quá cảnh tại sân bay của Vũ Hán Trung Quốc trong vòng 2 tiếng. Người này phát bệnh ngày 26/1, vào viện ngày 31/1, điều trị tại Bệnh viện Bệnh Nhiệt đới TP.HCM. <span>Bệnh nhân đã xuất viện chiều 21/02/2020</span>.</p><p>Li Ding, 66 tuổi, đến từ Vũ Xương, Vũ Hán, Hồ Bắc, Trung Quốc, nhập viện Bệnh viện Chợ Rẫy, TP.HCM ngày 22/1. Điều trị tại Bệnh viện Chợ Rẫy, TP.HCM. Âm tính lần 1, đang chờ kết quả xét nghiệm lần 2. <span>Bệnh nhân đã xuất viện chiều 12/02/2020</span>.</p><p>Li Zichao, 28 tuổi, con của ông Li Ding, sinh sống và làm việc tại Long An, nhập viện Bệnh viện Chợ Rẫy, TP.HCM ngày 22/1. Người này được điều trị tại Bệnh viện Chợ Rẫy, TP.HCM, <span>đã khỏi bệnh và xuất viện sáng 4/2</span>.</p>"
+    "note": "<p>10/03/2020 - Bệnh nhân số 32 là nữ, 24 tuổi, quốc tịch Việt Nam, sống tại London, Anh, có tiếp xúc với chị N.H.N. (bệnh nhân thứ 17 ở Việt Nam mắc Covid-19) tại London (Anh) ngày 27/2.</p><p>T.H.K., sinh năm 1947, quốc tịch Mỹ. Ngày 14/1, bệnh nhân bay từ Mỹ về Việt Nam trên chuyến bay ký hiệu 660 của hãng hàng không China Southern. Ngày 15/1 ông K. quá cảnh tại sân bay của Vũ Hán Trung Quốc trong vòng 2 tiếng. Người này phát bệnh ngày 26/1, vào viện ngày 31/1, điều trị tại Bệnh viện Bệnh Nhiệt đới TP.HCM. <span>Bệnh nhân đã xuất viện chiều 21/02/2020</span>.</p><p>Li Ding, 66 tuổi, đến từ Vũ Xương, Vũ Hán, Hồ Bắc, Trung Quốc, nhập viện Bệnh viện Chợ Rẫy, TP.HCM ngày 22/1. Điều trị tại Bệnh viện Chợ Rẫy, TP.HCM. Âm tính lần 1, đang chờ kết quả xét nghiệm lần 2. <span>Bệnh nhân đã xuất viện chiều 12/02/2020</span>.</p><p>Li Zichao, 28 tuổi, con của ông Li Ding, sinh sống và làm việc tại Long An, nhập viện Bệnh viện Chợ Rẫy, TP.HCM ngày 22/1. Người này được điều trị tại Bệnh viện Chợ Rẫy, TP.HCM, <span>đã khỏi bệnh và xuất viện sáng 4/2</span>.</p>"
   },
   {
     "GID_1": "VNM.32_1",
