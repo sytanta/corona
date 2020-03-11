@@ -39,10 +39,10 @@
     "GID_1": "VNM.19_1",
     "province": "Đà Nẵng",
     "latlong": [16.073695, 108.078852],
-    "infected": 2,
+    "infected": 3,
     "cured": 0,
     "death": 0,
-    "note": "<p>08/03/2020 - 2 bệnh nhân người Anh tại khách sạn ở quận Hải Châu, thành phố Đà Nẵng, nhập cảnh trên chuyến bay VN0054, chuyển về Bệnh viện Đà Nẵng ngày 7/3.</p>"
+    "note": "<p>11/03/2020 - Bệnh nhân thứ 35 là nhân viên bán hàng tại Siêu thị Điện máy Xanh ở quận Hải Châu, Đà Nẵng. Khoảng 18h ngày 4/3, cô tiếp xúc trực tiếp với hai người Anh tại siêu thị, những người này sau được xác định là bệnh nhân thứ 22 và 23.</p><p>08/03/2020 - 2 bệnh nhân người Anh tại khách sạn ở quận Hải Châu, thành phố Đà Nẵng, nhập cảnh trên chuyến bay VN0054, chuyển về Bệnh viện Đà Nẵng ngày 7/3.</p>"
   },
   {
     "GID_1": "VNM.49_1",
