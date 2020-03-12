@@ -3,10 +3,10 @@
     "GID_1": "VNM.11_1",
     "province": "Bình Thuận",
     "latlong": [11.136164, 108.126776],
-    "infected": 4,
+    "infected": 9,
     "cured": 0,
     "death": 0,
-    "note": "<p>11/03/2020 - Bệnh nhân số 36 là giúp việc cho doanh nhân 51 tuổi (bệnh nhân số 34), nữ, 64 tuổi, có biểu hiện sốt. Bệnh nhân số 37 là nhân viên, nữ, 37 tuổi, có biểu hiện sốt. Bệnh nhân số 38 là con dâu, 28 tuổi, có biểu hiện sốt, ho.</p><p>10/03/2020 - Bệnh nhân số 34 là một phụ nữ 51 tuổi, cư trú tỉnh Bình Thuận. Ngày 22/2 bà bay từ Việt Nam sang New York, quá cảnh tại sân bay Incheon của Hàn Quốc trong 3 giờ. Một tuần sau, bà từ Mỹ về Việt Nam, quá cảnh tại sân bay ở Doha, Qatar, nhập cảnh sáng 2/3 tại Tân Sơn Nhất. Sau đó bà đi ô tô về Bình Thuận.</p>"
+    "note": "<p>12/03/2020 - Bệnh nhân 40 là nữ, 2 tuổi, tiếp xúc gần bệnh nhân 34. Bệnh nhân 41 là nam, 59 tuổi, tiếp xúc gần bệnh nhân 34. Bệnh nhân 42 là nam, 28 tuổi, tiếp xúc gần bệnh nhân 34. Bệnh nhân 43 là nữ, 47 tuổi, tiếp xúc gần bệnh nhân 38. (Bệnh nhân 38 là con dâu bệnh nhân 34). Bệnh nhân 44 là nam, 13 tuổi, tiếp xúc gần bệnh nhân 37.</p><p>11/03/2020 - Bệnh nhân số 36 là giúp việc cho doanh nhân 51 tuổi (bệnh nhân số 34), nữ, 64 tuổi, có biểu hiện sốt. Bệnh nhân số 37 là nhân viên, nữ, 37 tuổi, có biểu hiện sốt. Bệnh nhân số 38 là con dâu, 28 tuổi, có biểu hiện sốt, ho.</p><p>10/03/2020 - Bệnh nhân số 34 là một phụ nữ 51 tuổi, cư trú tỉnh Bình Thuận. Ngày 22/2 bà bay từ Việt Nam sang New York, quá cảnh tại sân bay Incheon của Hàn Quốc trong 3 giờ. Một tuần sau, bà từ Mỹ về Việt Nam, quá cảnh tại sân bay ở Doha, Qatar, nhập cảnh sáng 2/3 tại Tân Sơn Nhất. Sau đó bà đi ô tô về Bình Thuận.</p>"
   },
   {
     "GID_1": "VNM.47_1",
@@ -66,10 +66,10 @@
     "GID_1": "VNM.27_1",
     "province": "Hà Nội",
     "latlong": [20.991397, 105.737776],
-    "infected": 4,
+    "infected": 5,
     "cured": 0,
     "death": 0,
-    "note": "<p>08/03/2020 - Bệnh nhân thứ 21 là ông N.Q.T., nam, 61 tuổi, ở Trúc Bạch - Ba Đình - Hà Nội. Đây là người ngồi gần hàng ghế với bệnh nhân N.H.N. trên chuyến bay VN0054.</p><p>07/03/2020 - Bệnh nhân thứ 20 là D.Đ.P., là lái xe của gia đình N.</p><p>07/03/2020 - Bệnh nhân thứ 19 là L.T.H., sinh năm 1956, là bác ruột của bệnh nhân N.</p><p>06/03/2020 - Bệnh nhân thứ 17 là N.H.N., một cô gái sinh năm 1993, hộ khẩu TP HCM, tạm trú ở phường Trúc Bạch. Ngày 15/2, cô bay từ Nội Bài (Hà Nội) đi London thăm gia đình. Hai ngày sau, cô sang Milan (Ý) 2 ngày; đến 20/2, quay lại Anh, ở đây 2 ngày rồi đến 25/2, đi tàu sang Paris (Pháp). Ngày 26/2, cô gái quay lại London. Trong thời gian ở châu Âu, cô gái tiếp xúc với nhiều người có biểu hiện ho, hắt hơi. Ngày 28/2 tại London (Anh), cô gái xuất hiện triệu chứng ho, không rõ sốt tuy nhiên không đi khám ở đâu chỉ ở tại nhà người thân.</p>"
+    "note": "<p>12/03/2020 - Bệnh nhân thứ 39 là nam, 25 tuổi, hướng dẫn viên du lịch, cư trú tại phường Dịch Vọng, quận Cầu Giấy, TP. Hà Nội. Ngày 4/3, bệnh nhân dẫn đoàn khách nước ngoài đi du lịch tại tỉnh Ninh Bình, trong đó có tiếp xúc với bệnh nhân 24.</p><p>08/03/2020 - Bệnh nhân thứ 21 là ông N.Q.T., nam, 61 tuổi, ở Trúc Bạch - Ba Đình - Hà Nội. Đây là người ngồi gần hàng ghế với bệnh nhân N.H.N. trên chuyến bay VN0054.</p><p>07/03/2020 - Bệnh nhân thứ 20 là D.Đ.P., là lái xe của gia đình N.</p><p>07/03/2020 - Bệnh nhân thứ 19 là L.T.H., sinh năm 1956, là bác ruột của bệnh nhân N.</p><p>06/03/2020 - Bệnh nhân thứ 17 là N.H.N., một cô gái sinh năm 1993, hộ khẩu TP HCM, tạm trú ở phường Trúc Bạch. Ngày 15/2, cô bay từ Nội Bài (Hà Nội) đi London thăm gia đình. Hai ngày sau, cô sang Milan (Ý) 2 ngày; đến 20/2, quay lại Anh, ở đây 2 ngày rồi đến 25/2, đi tàu sang Paris (Pháp). Ngày 26/2, cô gái quay lại London. Trong thời gian ở châu Âu, cô gái tiếp xúc với nhiều người có biểu hiện ho, hắt hơi. Ngày 28/2 tại London (Anh), cô gái xuất hiện triệu chứng ho, không rõ sốt tuy nhiên không đi khám ở đâu chỉ ở tại nhà người thân.</p>"
   },
   {
     "GID_1": "VNM.62_1",
