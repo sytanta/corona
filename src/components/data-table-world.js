@@ -1,6 +1,7 @@
 import React from "react"
 
 const DataTableWorld = ({ data }) => {
+  // Sort data, most first
   const sortedData = data.sort((item, nextItem) => {
     if (+item.node.infected > +nextItem.node.infected) {
       return -1

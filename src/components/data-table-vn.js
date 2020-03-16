@@ -1,7 +1,19 @@
 import React from "react"
 
 const DataTableVN = ({ data }) => {
-  const { total, cured, death } = data.reduce(
+  // Sort data, most first
+  const sortedData = data.sort((item, nextItem) => {
+    if (+item.node.infected > +nextItem.node.infected) {
+      return -1
+    }
+    if (+item.node.infected < +nextItem.node.infected) {
+      return 1
+    }
+
+    return 0
+  })
+
+  const { total, cured, death } = sortedData.reduce(
     (acc, item) => {
       return {
         total: acc.total + +item.node.infected,
@@ -28,7 +40,7 @@ const DataTableVN = ({ data }) => {
           </tr>
         </thead>
         <tbody>
-          {data.map(({ node: item }) => (
+          {sortedData.map(({ node: item }) => (
             <tr key={item.GID_1}>
               <td>{item.province}</td>
               <td>{item.infected}</td>
@@ -44,7 +56,7 @@ const DataTableVN = ({ data }) => {
           </tr>
         </tbody>
       </table>
-      <div>Cập nhật: 08:00AM 16/03/2020</div>
+      <div>Cập nhật: 08:00PM 16/03/2020</div>
     </>
   )
 }
