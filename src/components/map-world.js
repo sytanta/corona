@@ -141,7 +141,7 @@ const initMap = (infectionDataArr, setLoading, createButton) => {
      */
     for (let { node: country } of circles) {
       const isUnCured = country.infected > country.cured + country.death
-      const popupContent = `${country.name} - Số ca nhiễm: ${country.infected}`
+      const popupContent = `${country.name} - ${country.infected}`
 
       // Location name
       // L.marker([country.latlong[0], country.latlong[1]], {
