@@ -3,10 +3,10 @@
     "GID_1": "VNM.43_1",
     "province": "Ninh Thuận",
     "latlong": [11.711033, 108.892072],
-    "infected": 1,
+    "infected": 2,
     "cured": 0,
     "death": 0,
-    "note": "<p>16/03/2020 - Bệnh nhân 61 là nam, 42 tuổi ở Ninh Thuận. Người này đi Malaysia ngày 27/2, về Việt Nam ngày 4/3 trên chuyến bay VJ826, nhập cảnh qua Cảng hàng không quốc tế Tân Sơn Nhất. Ngày 10/3, ông đau họng và sốt nhưng không uống thuốc. Ngày 15/3 bệnh nhân đến Bệnh viện đa khoa tỉnh Ninh Thuận khám và điều trị.</p>"
+    "note": "<p>18/03/2020 - Bệnh nhân 67 là người đàn ông 36 tuổi ở xã Phước Nam, huyện Thuận Nam, tỉnh Ninh Thuận. Người này đã đi cùng 'bệnh nhân 61' đến Malaysia ngày 27/2 và trở lại Việt Nam ngày 4/3 trên chuyến bay VJ826 hạ cánh Tân Sơn Nhất.</p><p>16/03/2020 - Bệnh nhân 61 là nam, 42 tuổi ở Ninh Thuận. Người này đi Malaysia ngày 27/2, về Việt Nam ngày 4/3 trên chuyến bay VJ826, nhập cảnh qua Cảng hàng không quốc tế Tân Sơn Nhất. Ngày 10/3, ông đau họng và sốt nhưng không uống thuốc. Ngày 15/3 bệnh nhân đến Bệnh viện đa khoa tỉnh Ninh Thuận khám và điều trị.</p>"
   },
   {
     "GID_1": "VNM.11_1",
@@ -48,10 +48,10 @@
     "GID_1": "VNM.19_1",
     "province": "Đà Nẵng",
     "latlong": [16.073695, 108.078852],
-    "infected": 3,
+    "infected": 4,
     "cured": 0,
     "death": 0,
-    "note": "<p>11/03/2020 - Bệnh nhân thứ 35 là nhân viên bán hàng tại Siêu thị Điện máy Xanh ở quận Hải Châu, Đà Nẵng. Khoảng 18h ngày 4/3, cô tiếp xúc trực tiếp với hai người Anh tại siêu thị, những người này sau được xác định là bệnh nhân thứ 22 và 23.</p><p>08/03/2020 - 2 bệnh nhân người Anh tại khách sạn ở quận Hải Châu, thành phố Đà Nẵng, nhập cảnh trên chuyến bay VN0054, chuyển về Bệnh viện Đà Nẵng ngày 7/3.</p>"
+    "note": "<p>18/03/2020 - Bệnh nhân 68 là một người Mỹ, 41 tuổi, từ ngày 11/2 đi qua Ấn Độ, Tây Ban Nha, Marốc, Thuỵ Sĩ, Đức, Hungary, Hà Lan, quá cảnh Singapore rồi về Đà Nẵng lúc 11h trưa ngày 14/3 trên chuyến MI 632, ghế ngồi 15F.</p><p>11/03/2020 - Bệnh nhân thứ 35 là nhân viên bán hàng tại Siêu thị Điện máy Xanh ở quận Hải Châu, Đà Nẵng. Khoảng 18h ngày 4/3, cô tiếp xúc trực tiếp với hai người Anh tại siêu thị, những người này sau được xác định là bệnh nhân thứ 22 và 23.</p><p>08/03/2020 - 2 bệnh nhân người Anh tại khách sạn ở quận Hải Châu, thành phố Đà Nẵng, nhập cảnh trên chuyến bay VN0054, chuyển về Bệnh viện Đà Nẵng ngày 7/3.</p>"
   },
   {
     "GID_1": "VNM.49_1",
