@@ -51,7 +51,7 @@ const DataTableWorld = ({ data }) => {
           </tr>
         </tbody>
       </table>
-      <div>Cập nhật 18/03/2020. Nguồn: WHO</div>
+      <div>Cập nhật 20/03/2020. Nguồn: Johns Hopkins CSSE</div>
     </>
   )
 }

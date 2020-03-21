@@ -61,6 +61,7 @@ module.exports = {
         path: `./src/data/`,
       },
     },
+    `gatsby-transformer-csv`,
     `gatsby-plugin-feed`,
     {
       resolve: `gatsby-plugin-manifest`,
