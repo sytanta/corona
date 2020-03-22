@@ -28,7 +28,7 @@
   },
   {
     "WB_A3": "VNM",
-    "name": "Viet Nam",
+    "name": "Vietnam",
     "latlong": [16.126218, 107.787331],
     "infected": "0",
     "death": "0",
@@ -73,7 +73,7 @@
   },
   {
     "WB_A3": "BRN",
-    "name": "Brunei Darussalam",
+    "name": "Brunei",
     "latlong": [4.498747, 114.623830],
     "infected": "0",
     "death": "0",
@@ -325,7 +325,7 @@
   },
   {
     "WB_A3": "BHS",
-    "name": "Bahamas",
+    "name": "Bahamas, The",
     "latlong": [24.483104, -77.880706],
     "infected": "0",
     "death": "0",
@@ -586,7 +586,7 @@
   },
   {
     "WB_A3": "RUS",
-    "name": "Russian Federation",
+    "name": "Russia",
     "latlong": [64.953645, 100.519259],
     "infected": "0",
     "death": "0",
@@ -1270,7 +1270,7 @@
   },
   {
     "WB_A3": "ZAR",
-    "name": "Democratic Republic of the Congo",
+    "name": "Congo (Kinshasa)",
     "latlong": [-2.886822, 23.907699],
     "infected": "0",
     "death": "0",
@@ -1369,7 +1369,7 @@
   },
   {
     "WB_A3": "COG",
-    "name": "Congo",
+    "name": "Congo (Brazzaville)",
     "latlong": [-0.911870, 15.614740],
     "infected": "0",
     "death": "0",
@@ -1405,7 +1405,7 @@
   },
   {
     "WB_A3": "TZA",
-    "name": "United Republic of Tanzania",
+    "name": "Tanzania",
     "latlong": [-5.894452, 35.016091],
     "infected": "0",
     "death": "0",
