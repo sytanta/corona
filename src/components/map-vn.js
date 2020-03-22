@@ -163,7 +163,7 @@ const initMap = (infectionDataArr, setLoading, createButton) => {
           className: isUnCured
             ? `${classes.locationName} ${classes.locationNameUnCured}`
             : `${classes.locationName} ${classes.locationNameCured}`,
-          html: `${province.province} (${province.infected}-${province.cured})`,
+          html: "", // `${province.province} (${province.infected}-${province.cured})`,
         }),
       }).addTo(map)
 
