@@ -19,7 +19,7 @@ class Index extends Component {
   }
 
   setMapType = type => {
-    if (!type) {
+    if (!type || type === this.state.mapType) {
       return
     }
 
@@ -35,9 +35,70 @@ class Index extends Component {
     })
   }
 
+  prepareWorldData = (geoDataArr, JHDataArr) => {
+    const geoDataObj = geoDataArr.reduce((acc, country) => {
+      acc[country.node.name] = 1
+      return acc
+    }, {})
+
+    const JHDataObj = JHDataArr.reduce((acc, { node: country }) => {
+      if (
+        !acc.hasOwnProperty(country.Country_Region) &&
+        (!country.Province_State ||
+          country.Province_State === country.Country_Region ||
+          !geoDataObj.hasOwnProperty(country.Province_State))
+      ) {
+        acc[country.Country_Region] = {
+          infected: +country.Confirmed,
+          death: +country.Deaths,
+          cured: +country.Recovered,
+        }
+      } else if (
+        country.Province_State &&
+        country.Province_State !== country.Country_Region &&
+        geoDataObj.hasOwnProperty(country.Province_State) &&
+        !acc.hasOwnProperty(country.Province_State)
+      ) {
+        acc[country.Province_State] = {
+          infected: +country.Confirmed,
+          death: +country.Deaths,
+          cured: +country.Recovered,
+        }
+      } else if (
+        acc.hasOwnProperty(country.Country_Region) &&
+        country.Province_State &&
+        country.Province_State !== country.Country_Region &&
+        !geoDataObj.hasOwnProperty(country.Province_State)
+      ) {
+        acc[country.Country_Region].infected += +country.Confirmed
+        acc[country.Country_Region].death += +country.Deaths
+        acc[country.Country_Region].cured += +country.Recovered
+      }
+
+      return acc
+    }, {})
+
+    geoDataArr.forEach(({ node: country }) => {
+      if (JHDataObj.hasOwnProperty(country.name)) {
+        const JDCountryData = JHDataObj[country.name]
+
+        country.infected = JDCountryData.infected
+        country.death = JDCountryData.death
+        country.cured = JDCountryData.cured
+      }
+    })
+
+    return geoDataArr
+  }
+
   render() {
     const { data, location } = this.props
     const siteTitle = data.site.siteMetadata.title
+
+    const worldData = this.prepareWorldData(
+      data.allInfectionWorldJson.edges,
+      data.allDataWorldCsv.edges
+    )
 
     const mapComponent =
       this.state.mapType === "vn" ? (
@@ -50,7 +111,7 @@ class Index extends Component {
         <MapWorld
           setMap={this.setMapType}
           setLoading={this.setLoadingState}
-          infectionData={data.allInfectionWorldJson.edges}
+          infectionData={worldData}
         />
       )
 
@@ -88,7 +149,10 @@ class Index extends Component {
           <div className={classes.infoTable}>{dataTableComponent}</div>
         </div>
         {additionalNote}
-        <Content updatedDate={data.site.siteMetadata.updatedDate} />
+        <Content
+          updatedDate={data.site.siteMetadata.updatedDate}
+          switchMap={this.setMapType}
+        />
       </Layout>
     )
   }
@@ -129,6 +193,20 @@ export const pageQuery = graphql`
           cured
           death
           isolated
+        }
+      }
+    }
+
+    allDataWorldCsv {
+      edges {
+        node {
+          Confirmed
+          Country_Region
+          Deaths
+          Province_State
+          Recovered
+          Latitude
+          Longitude
         }
       }
     }
