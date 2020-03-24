@@ -66,10 +66,10 @@
     "GID_1": "VNM.19_1",
     "province": "Đà Nẵng",
     "latlong": [16.073695, 108.078852],
-    "infected": 4,
+    "infected": 5,
     "cured": 0,
     "death": 0,
-    "note": "<p>18/03/2020 - Bệnh nhân 68 là một người Mỹ, 41 tuổi, từ ngày 11/2 đi qua Ấn Độ, Tây Ban Nha, Marốc, Thuỵ Sĩ, Đức, Hungary, Hà Lan, quá cảnh Singapore rồi về Đà Nẵng lúc 11h trưa ngày 14/3 trên chuyến MI 632, ghế ngồi 15F.</p><p>11/03/2020 - Bệnh nhân thứ 35 là nhân viên bán hàng tại Siêu thị Điện máy Xanh ở quận Hải Châu, Đà Nẵng. Khoảng 18h ngày 4/3, cô tiếp xúc trực tiếp với hai người Anh tại siêu thị, những người này sau được xác định là bệnh nhân thứ 22 và 23.</p><p>08/03/2020 - 2 bệnh nhân người Anh tại khách sạn ở quận Hải Châu, thành phố Đà Nẵng, nhập cảnh trên chuyến bay VN0054, chuyển về Bệnh viện Đà Nẵng ngày 7/3.</p>"
+    "note": "<p>23/03/2020 - Bệnh nhân 122 là nữ, 24 tuổi quê Hà Tĩnh, từ Bangkok về Đà Nẵng được cách ly ngay tại Trung tâm Giáo dục Quốc phòng. Cô là nhân viên quán rượu tại Bangkok, Thái Lan, có tiếp xúc với nhiều người không đeo khẩu trang. Ngày 17/3, cô đến quán bar ở Bangkok thăm bạn. Ngày 20/3, cô đi taxi đến sân bay quốc tế Suvarnabhumi, lên chuyến bay số hiệu TG947 về Đà Nẵng.</p><p>18/03/2020 - Bệnh nhân 68 là một người Mỹ, 41 tuổi, từ ngày 11/2 đi qua Ấn Độ, Tây Ban Nha, Marốc, Thuỵ Sĩ, Đức, Hungary, Hà Lan, quá cảnh Singapore rồi về Đà Nẵng lúc 11h trưa ngày 14/3 trên chuyến MI 632, ghế ngồi 15F.</p><p>11/03/2020 - Bệnh nhân thứ 35 là nhân viên bán hàng tại Siêu thị Điện máy Xanh ở quận Hải Châu, Đà Nẵng. Khoảng 18h ngày 4/3, cô tiếp xúc trực tiếp với hai người Anh tại siêu thị, những người này sau được xác định là bệnh nhân thứ 22 và 23.</p><p>08/03/2020 - 2 bệnh nhân người Anh tại khách sạn ở quận Hải Châu, thành phố Đà Nẵng, nhập cảnh trên chuyến bay VN0054, chuyển về Bệnh viện Đà Nẵng ngày 7/3.</p>"
   },
   {
     "GID_1": "VNM.49_1",
@@ -100,7 +100,7 @@
   },
   {
     "GID_1": "VNM.62_1",
-    "province": "Tỉnh Vĩnh Phúc",
+    "province": "Vĩnh Phúc",
     "latlong": [21.364051, 105.568868],
     "infected": 11,
     "cured": 11,
@@ -124,6 +124,15 @@
     "cured": 0,
     "death": 0,
     "note": "<p>23/03/2020 - Bệnh nhân 118 là nữ, quốc tịch Việt Nam, 23 tuổi, trú tại huyện Châu Phú, tỉnh An Giang, làm nhân viên casino. Tiền sử có viêm phế quản mãn tính. Trong hai tuần gần đây cô từ Việt Nam sang Campuchia làm nhân viên casino Galaxy. Ngày 19-3 cô từ Campuchia về Việt Nam qua cửa khẩu Mộc Bài - Tây Ninh. Bệnh nhân 117 là nam, quốc tịch Việt Nam, 30 tuổi, trú tại huyện Tân Hưng, Long An, làm nghề công nghệ thông tin. Từ ngày 9 đến 19-3-2020, anh du lịch ở Campuchia, lưu trú tại khách sạn Infinity, TP Phnom Penh.<p>"
+  },
+  {
+    "GID_1": "VNM.6_1",
+    "province": "Bến Tre",
+    "latlong": [10.134263, 106.454154],
+    "infected": 1,
+    "cured": 0,
+    "death": 0,
+    "note": "<p>23/03/2020 - Bệnh nhân 123 là nữ, 17 tuổi, sống tại Sarawar, Malaysia được 3-4 tháng nay. Ngày 17/3 cô sang Bandar Seri Begawa, đi chuyến bay BI381, ghế 27K tới Tân Sơn Nhất trưa cùng ngày. Sau đó cô về Bến Tre trên xe nhà Công Tạo, rồi tự cách ly tại nhà.<p>"
   },
   {
     "GID_1": "VNM.18_1",
