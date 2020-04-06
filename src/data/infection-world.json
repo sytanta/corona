@@ -325,7 +325,7 @@
   },
   {
     "WB_A3": "BHS",
-    "name": "Bahamas, The",
+    "name": "Bahamas",
     "latlong": [24.483104, -77.880706],
     "infected": "0",
     "death": "0",
@@ -505,7 +505,7 @@
   },
   {
     "WB_A3": "VIR",
-    "name": "United States Virgin Islands",
+    "name": "Virgin Islands",
     "latlong": [18.330668, -64.848347],
     "infected": "0",
     "death": "0",
@@ -946,7 +946,7 @@
   },
   {
     "WB_A3": "MDA",
-    "name": "Republic of Moldova",
+    "name": "Moldova",
     "latlong": [47.197246, 28.750861],
     "infected": "0",
     "death": "0",
