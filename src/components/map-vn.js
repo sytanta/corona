@@ -7,7 +7,7 @@ const initMap = (infectionDataArr, setLoading, createButton) => {
   const d3 = window.d3
   const L = window.L
 
-  const infectedColor = "#FEB24C"
+  const infectedColor = "chocolate"
   const curedColor = "#556B2F"
 
   const mbAttribute =
@@ -20,17 +20,17 @@ const initMap = (infectionDataArr, setLoading, createButton) => {
     attribution: mbAttribute,
   })
 
-  const southWest = L.latLng(8.60217, 109.868607),
-    northEast = L.latLng(23.58359, 101.584916),
+  const southWest = L.latLng(23.934948, 100.795002), // L.latLng(8.60217, 109.868607),
+    northEast = L.latLng(7.421942, 112.620107), // L.latLng(23.58359, 101.584916),
     maxBounds = L.latLngBounds(southWest, northEast)
 
   const map = L.map("map", {
-    minZoom: 6,
+    minZoom: 5,
     noWrap: true,
     maxBounds: maxBounds,
     maxBoundsViscosity: 0.8,
     layers: [grayScale],
-  }).setView([21.021009, 105.727314], 6)
+  }).setView([21.021009, 105.727314], 5)
 
   Promise.all([
     d3.json("/data/vn-province.geojson"),
@@ -82,6 +82,23 @@ const initMap = (infectionDataArr, setLoading, createButton) => {
         weight: 1,
       },
     }).addTo(map)
+
+    let contentShown = false
+    map.on("zoomend", () => {
+      const zoom = map.getZoom()
+
+      if (zoom >= 7 && !contentShown) {
+        contentShown = true
+
+        const markerLayer = document.querySelector(".leaflet-marker-pane")
+        markerLayer.className += " show"
+      } else if (zoom < 7 && contentShown) {
+        contentShown = false
+
+        const markerLayer = document.querySelector(".leaflet-marker-pane")
+        markerLayer.className = markerLayer.className.replace(/show/g, "")
+      }
+    })
 
     // Province border
     const provinceGeoJSON = L.geoJson(collection, {
@@ -161,23 +178,11 @@ const initMap = (infectionDataArr, setLoading, createButton) => {
       L.marker([province.latlong[0], province.latlong[1]], {
         icon: L.divIcon({
           className: isUnCured
-            ? `${classes.locationName} ${classes.locationNameUnCured}`
-            : `${classes.locationName} ${classes.locationNameCured}`,
-          html: "", // `${province.province} (${province.infected}-${province.cured})`,
+            ? `province-data ${classes.locationName} ${classes.locationNameUnCured}`
+            : `province-data cured ${classes.locationName} ${classes.locationNameCured}`,
+          html: `<div>${province.province} (${province.infected} - ${province.cured})</div>`,
         }),
       }).addTo(map)
-
-      const cm = L.circleMarker(province.latlong, {
-        color: isUnCured ? "red" : "darkgreen",
-        fillColor: isUnCured ? "#f03" : "darkgreen",
-        fillOpacity: 0.5,
-        radius: isUnCured ? province.infected : 2,
-        weight: 1,
-      }).addTo(map)
-
-      if (isUnCured) {
-        cm.bindPopup(popupContent)
-      }
     }
 
     /**
@@ -204,7 +209,6 @@ const initMap = (infectionDataArr, setLoading, createButton) => {
           <div id="${btnContainerId}" class="${classes.buttonContainer}"></div>
           `
       }
-      // <div class=${classes.note}>${props.note}</div>
 
       this._div.innerHTML = content
 
@@ -231,13 +235,15 @@ class MapVN extends Component {
 
   createSwitchMapButton = containerId => {
     const element = (
-      <button
-        onClick={() => {
-          this.props.setMap("world")
-        }}
+      <a
+        className="button"
+        href="https://yoishira.now.sh/"
+        target="_blank"
+        rel="nofollow"
+        title="Xem thông tin thế giới"
       >
         Xem thông tin thế giới
-      </button>
+      </a>
     )
 
     ReactDOM.render(element, document.getElementById(containerId))

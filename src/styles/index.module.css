@@ -3,7 +3,12 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 1.2rem 0;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
@@ -28,7 +33,7 @@ a {
   position: relative;
 }
 .infoTable {
-  background-color: #191A1A;
+  background-color: #191a1a;
   color: #fff;
   flex-grow: 0;
   max-height: 500px;
@@ -42,17 +47,21 @@ a {
   table-layout: auto;
   width: auto;
 }
-.infoTable table th, .infoTable table td {
+.infoTable table th,
+.infoTable table td {
   padding: 0.2rem 0.5rem;
 }
-.infoTable table th td:first-child, .infoTable table td:first-child {
+.infoTable table th td:first-child,
+.infoTable table td:first-child {
   background-color: darkolivegreen;
 }
-.infoTable table th td:nth-child(2), .infoTable table td:nth-child(2) {
+.infoTable table th td:nth-child(2),
+.infoTable table td:nth-child(2) {
   background-color: darkolivegreen;
   color: gold;
 }
-.infoTable table th td:nth-child(3), .infoTable table td:nth-child(3) {
+.infoTable table th td:nth-child(3),
+.infoTable table td:nth-child(3) {
   background-color: darkolivegreen;
   color: coral;
 }
@@ -64,8 +73,8 @@ a {
 .noteData {
   background: gray;
   color: mintcream;
-	margin: 0.1rem;
-	padding: 0.5rem 0.5rem 0.5rem 1.7rem;
+  margin: 0.1rem;
+  padding: 0.5rem 0.5rem 0.5rem 1.7rem;
 }
 .noteData h6 {
   color: darkorange;
@@ -73,13 +82,6 @@ a {
 .noteData span {
   color: darkblue;
 }
-
-/* @media all and (max-width: 800px) { */
-  /* .container { */
-    /* When on medium sized screens, we center it by evenly distributing empty space around items */
-    /* justify-content: space-around; */
-  /* } */
-/* } */
 
 /* Small screens */
 @media all and (max-width: 860px) {
