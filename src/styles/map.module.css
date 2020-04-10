@@ -10,7 +10,7 @@
 }
 .info a {
   background: dimgray;
-  color: white;
+  color: white !important;
   box-shadow: none;
   border: none;
   border-radius: 3px;
