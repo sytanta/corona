@@ -30,7 +30,7 @@ const initMap = (infectionDataArr, setLoading, createButton) => {
     maxBounds: maxBounds,
     maxBoundsViscosity: 0.8,
     layers: [grayScale],
-  }).setView([21.021009, 105.727314], 5)
+  }).setView([21.021009, 105.727314], 6)
 
   Promise.all([
     d3.json("/data/vn-province.geojson"),
