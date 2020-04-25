@@ -126,14 +126,19 @@ class Index extends Component {
 
     const additionalNote =
       this.state.mapType === "vn" ? (
-        <ol className={classes.noteData}>
-          {data.allInfectionVnJson.edges.map(({ node: province }) => (
-            <li key={province["GID_1"]}>
-              <h6>{province.province}</h6>
-              <div dangerouslySetInnerHTML={{ __html: `${province.note}` }} />
-            </li>
-          ))}
-        </ol>
+        <>
+          <div className={classes.reInfected}>
+            <i>Bệnh nhân tái dương tính:</i> 188, 52, 149, 137 và 36
+          </div>
+          <ol className={classes.noteData}>
+            {data.allInfectionVnJson.edges.map(({ node: province }) => (
+              <li key={province["GID_1"]}>
+                <h6>{province.province}</h6>
+                <div dangerouslySetInnerHTML={{ __html: `${province.note}` }} />
+              </li>
+            ))}
+          </ol>
+        </>
       ) : (
         ""
       )

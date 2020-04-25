@@ -83,6 +83,13 @@ a {
   color: darkblue;
 }
 
+.reInfected {
+  background: chocolate;
+  color: aliceblue;
+  margin: 10px 0 0;
+  padding: 0.5em 1em;
+}
+
 /* Small screens */
 @media all and (max-width: 860px) {
   .container {
@@ -90,6 +97,20 @@ a {
   }
 
   .infoTable {
-    max-width: 100%;
+    margin: 0 auto;
+    max-height: unset;
+    max-width: unset;
+    width: 80%;
+  }
+
+  .infoTable table {
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .infoTable {
+    margin: 0;
+    width: 100%;
   }
 }
