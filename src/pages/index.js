@@ -129,7 +129,7 @@ class Index extends Component {
         <>
           <div className={classes.reInfected}>
             <i>Bệnh nhân tái dương tính:</i> 188, 137, 74 (Hà Nội); 52 và 149
-            (Quảng Ninh); 36 (Bình Thuận); 207, 224 và 151 (TP HCM)
+            (Quảng Ninh); 36 (Bình Thuận); 207, 224, 151 và 92 (TP HCM)
           </div>
           <ol className={classes.noteData}>
             {data.allInfectionVnJson.edges.map(({ node: province }) => (
