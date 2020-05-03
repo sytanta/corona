@@ -128,8 +128,8 @@ class Index extends Component {
       this.state.mapType === "vn" ? (
         <>
           <div className={classes.reInfected}>
-            <i>Bệnh nhân tái dương tính:</i> 188, 137, 74 (Hà Nội); 52 và 149
-            (Quảng Ninh); 36 (Bình Thuận); 207, 224, 151 và 92 (TP HCM)
+            <i>Bệnh nhân tái dương tính (14):</i> 188, 137, 74, 130 và 50 (Hà Nội); 52 và 149
+            (Quảng Ninh); 36 (Bình Thuận); 207, 224, 151, 92, 124 và 235 (TP HCM)
           </div>
           <ol className={classes.noteData}>
             {data.allInfectionVnJson.edges.map(({ node: province }) => (
